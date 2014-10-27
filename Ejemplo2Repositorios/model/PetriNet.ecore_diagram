@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_G4C7wFaIEeStmprtHEuMOg" type="Ecore" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_G5V8QFaIEeStmprtHEuMOg" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_G5WjUFaIEeStmprtHEuMOg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5WjUVaIEeStmprtHEuMOg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5WjUlaIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5WjU1aIEeStmprtHEuMOg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5WjVFaIEeStmprtHEuMOg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5WjVVaIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5WjVlaIEeStmprtHEuMOg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5WjV1aIEeStmprtHEuMOg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5WjWFaIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5WjWVaIEeStmprtHEuMOg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="PetriNet.ecore#//PetriNode"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G5V8QVaIEeStmprtHEuMOg" x="105" y="285"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_G5WjWlaIEeStmprtHEuMOg" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_G5XKYFaIEeStmprtHEuMOg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5XKYVaIEeStmprtHEuMOg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5XKYlaIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5XKY1aIEeStmprtHEuMOg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5XKZFaIEeStmprtHEuMOg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5XKZVaIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5XKZlaIEeStmprtHEuMOg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5XKZ1aIEeStmprtHEuMOg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5XKaFaIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5XKaVaIEeStmprtHEuMOg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="PetriNet.ecore#//Place"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G5WjW1aIEeStmprtHEuMOg" x="245" y="30"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_G5XKalaIEeStmprtHEuMOg" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_G5XKbFaIEeStmprtHEuMOg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5XxcFaIEeStmprtHEuMOg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5XxcVaIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5XxclaIEeStmprtHEuMOg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5Xxc1aIEeStmprtHEuMOg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5XxdFaIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5XxdVaIEeStmprtHEuMOg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5XxdlaIEeStmprtHEuMOg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5Xxd1aIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5XxeFaIEeStmprtHEuMOg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="PetriNet.ecore#//Token"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G5XKa1aIEeStmprtHEuMOg" x="130" y="110"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_G5YYgFaIEeStmprtHEuMOg" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_G5YYglaIEeStmprtHEuMOg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5YYg1aIEeStmprtHEuMOg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5YYhFaIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5YYhVaIEeStmprtHEuMOg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5YYhlaIEeStmprtHEuMOg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5YYh1aIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5YYiFaIEeStmprtHEuMOg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5YYiVaIEeStmprtHEuMOg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5YYilaIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5YYi1aIEeStmprtHEuMOg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="PetriNet.ecore#//Transition"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G5YYgVaIEeStmprtHEuMOg" x="10" y="110"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_G5Y_kFaIEeStmprtHEuMOg" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_G5Y_klaIEeStmprtHEuMOg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5Y_k1aIEeStmprtHEuMOg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5Y_lFaIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5Y_lVaIEeStmprtHEuMOg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5Y_llaIEeStmprtHEuMOg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5Y_l1aIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5Y_mFaIEeStmprtHEuMOg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5Y_mVaIEeStmprtHEuMOg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5Y_mlaIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5Y_m1aIEeStmprtHEuMOg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="PetriNet.ecore#//Arc"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G5Y_kVaIEeStmprtHEuMOg" x="505" y="75"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_G5ZmoFaIEeStmprtHEuMOg" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_G5ZmolaIEeStmprtHEuMOg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5Zmo1aIEeStmprtHEuMOg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5ZmpFaIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5ZmpVaIEeStmprtHEuMOg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5ZmplaIEeStmprtHEuMOg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5Zmp1aIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5ZmqFaIEeStmprtHEuMOg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5ZmqVaIEeStmprtHEuMOg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5ZmqlaIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5Zmq1aIEeStmprtHEuMOg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="PetriNet.ecore#//PetriModel"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G5ZmoVaIEeStmprtHEuMOg" x="255" y="395"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_G5ZmrFaIEeStmprtHEuMOg" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_G5aNsFaIEeStmprtHEuMOg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5aNsVaIEeStmprtHEuMOg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5aNslaIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5aNs1aIEeStmprtHEuMOg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5aNtFaIEeStmprtHEuMOg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5aNtVaIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5aNtlaIEeStmprtHEuMOg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_G5aNt1aIEeStmprtHEuMOg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G5aNuFaIEeStmprtHEuMOg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G5aNuVaIEeStmprtHEuMOg"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="PetriNet.ecore#//PetriEdge"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G5ZmrVaIEeStmprtHEuMOg" x="510" y="245"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_G4C7wVaIEeStmprtHEuMOg"/>
+  <element xmi:type="ecore:EPackage" href="PetriNet.ecore#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_G5shkFaIEeStmprtHEuMOg" type="4004" source="_G5V8QFaIEeStmprtHEuMOg" target="_G5ZmoFaIEeStmprtHEuMOg">
+    <styles xmi:type="notation:FontStyle" xmi:id="_G5shkVaIEeStmprtHEuMOg" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_G5shklaIEeStmprtHEuMOg" points="[0, 0, -43, -60]$[43, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6RJUlaIEeStmprtHEuMOg" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6RJU1aIEeStmprtHEuMOg" id="(0.32857142857142857,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_G5uWwFaIEeStmprtHEuMOg" type="4003" source="_G5WjWlaIEeStmprtHEuMOg" target="_G5XKalaIEeStmprtHEuMOg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_G5u90FaIEeStmprtHEuMOg" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_G5u90VaIEeStmprtHEuMOg" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_G5u90laIEeStmprtHEuMOg" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_G5u901aIEeStmprtHEuMOg" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_G5uWwVaIEeStmprtHEuMOg" fontName="Ubuntu"/>
+    <element xmi:type="ecore:EReference" href="PetriNet.ecore#//Place/token"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_G5uWwlaIEeStmprtHEuMOg" points="[0, 0, 58, -60]$[-58, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6RwYFaIEeStmprtHEuMOg" id="(0.22916666666666666,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6RwYVaIEeStmprtHEuMOg" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_G5wzAFaIEeStmprtHEuMOg" type="4004" source="_G5WjWlaIEeStmprtHEuMOg" target="_G5V8QFaIEeStmprtHEuMOg">
+    <styles xmi:type="notation:FontStyle" xmi:id="_G5wzAVaIEeStmprtHEuMOg" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_G5wzAlaIEeStmprtHEuMOg" points="[0, 0, 56, -172]$[0, 111, 56, -61]$[-56, 172, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6S-glaIEeStmprtHEuMOg" id="(0.4791666666666667,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6TlkFaIEeStmprtHEuMOg" id="(0.40789473684210525,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_G5yBIFaIEeStmprtHEuMOg" type="4004" source="_G5XKalaIEeStmprtHEuMOg" target="_G5V8QFaIEeStmprtHEuMOg">
+    <styles xmi:type="notation:FontStyle" xmi:id="_G5yBIVaIEeStmprtHEuMOg" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_G5yBIlaIEeStmprtHEuMOg" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6S-gFaIEeStmprtHEuMOg" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6S-gVaIEeStmprtHEuMOg" id="(0.2236842105263158,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_G5zPQFaIEeStmprtHEuMOg" type="4003" source="_G5YYgFaIEeStmprtHEuMOg" target="_G5V8QFaIEeStmprtHEuMOg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_G5zPQ1aIEeStmprtHEuMOg" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_G5z2UFaIEeStmprtHEuMOg" x="2" y="-9"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_G5z2UVaIEeStmprtHEuMOg" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_G5z2UlaIEeStmprtHEuMOg" x="-5" y="5"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_G5zPQVaIEeStmprtHEuMOg" fontName="Ubuntu"/>
+    <element xmi:type="ecore:EReference" href="PetriNet.ecore#//Transition/test"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_G5zPQlaIEeStmprtHEuMOg" points="[0, 0, -105, -60]$[105, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6SXcVaIEeStmprtHEuMOg" id="(0.6621621621621622,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6SXclaIEeStmprtHEuMOg" id="(0.14473684210526316,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_G51rgFaIEeStmprtHEuMOg" type="4004" source="_G5YYgFaIEeStmprtHEuMOg" target="_G5V8QFaIEeStmprtHEuMOg">
+    <styles xmi:type="notation:FontStyle" xmi:id="_G51rgVaIEeStmprtHEuMOg" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_G51rglaIEeStmprtHEuMOg" points="[0, 0, -106, -86]$[0, 86, -106, 0]$[101, 86, -5, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6RwYlaIEeStmprtHEuMOg" id="(0.32432432432432434,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6SXcFaIEeStmprtHEuMOg" id="(0.06578947368421052,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_G525oFaIEeStmprtHEuMOg" type="4002" source="_G5Y_kFaIEeStmprtHEuMOg" target="_G5V8QFaIEeStmprtHEuMOg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_G525o1aIEeStmprtHEuMOg" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_G525pFaIEeStmprtHEuMOg" x="2" y="21"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_G525pVaIEeStmprtHEuMOg" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_G525plaIEeStmprtHEuMOg" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_G525oVaIEeStmprtHEuMOg" fontName="Ubuntu"/>
+    <element xmi:type="ecore:EReference" href="PetriNet.ecore#//Arc/petriFrom"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_G525olaIEeStmprtHEuMOg" points="[0, 0, 86, -60]$[-86, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6QiQVaIEeStmprtHEuMOg" id="(0.325,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6QiQlaIEeStmprtHEuMOg" id="(0.8026315789473685,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_G54u0FaIEeStmprtHEuMOg" type="4002" source="_G5Y_kFaIEeStmprtHEuMOg" target="_G5V8QFaIEeStmprtHEuMOg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_G55V4FaIEeStmprtHEuMOg" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_G55V4VaIEeStmprtHEuMOg" x="-4" y="25"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_G55V4laIEeStmprtHEuMOg" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_G55V41aIEeStmprtHEuMOg" x="-4" y="19"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_G54u0VaIEeStmprtHEuMOg" fontName="Ubuntu"/>
+    <element xmi:type="ecore:EReference" href="PetriNet.ecore#//Arc/petriTo"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_G54u0laIEeStmprtHEuMOg" points="[0, 0, 360, -158]$[-116, 173, 244, 15]$[-326, 173, 34, 15]$[-330, 171, 30, 13]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6P7MFaIEeStmprtHEuMOg" id="(0.15,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6P7MVaIEeStmprtHEuMOg" id="(0.6052631578947368,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_G57LEFaIEeStmprtHEuMOg" type="4004" source="_G5Y_kFaIEeStmprtHEuMOg" target="_G5ZmrFaIEeStmprtHEuMOg">
+    <styles xmi:type="notation:FontStyle" xmi:id="_G57LEVaIEeStmprtHEuMOg" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_G57LElaIEeStmprtHEuMOg" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6P7MlaIEeStmprtHEuMOg" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6QiQFaIEeStmprtHEuMOg" id="(0.24324324324324326,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_G58ZMFaIEeStmprtHEuMOg" type="4003" source="_G5ZmoFaIEeStmprtHEuMOg" target="_G5ZmoFaIEeStmprtHEuMOg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_G58ZM1aIEeStmprtHEuMOg" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_G58ZNFaIEeStmprtHEuMOg" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_G58ZNVaIEeStmprtHEuMOg" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_G58ZNlaIEeStmprtHEuMOg" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_G58ZMVaIEeStmprtHEuMOg" fontName="Ubuntu"/>
+    <element xmi:type="ecore:EReference" href="PetriNet.ecore#//PetriModel/petriModels"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_G58ZMlaIEeStmprtHEuMOg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_G5-1cFaIEeStmprtHEuMOg" type="4004" source="_G5ZmrFaIEeStmprtHEuMOg" target="_G5ZmoFaIEeStmprtHEuMOg">
+    <styles xmi:type="notation:FontStyle" xmi:id="_G5-1cVaIEeStmprtHEuMOg" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_G5-1claIEeStmprtHEuMOg" points="[0, 0, 45, -60]$[-45, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6RJUFaIEeStmprtHEuMOg" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G6RJUVaIEeStmprtHEuMOg" id="(0.6642857142857143,0.0)"/>
+  </edges>
+</notation:Diagram>

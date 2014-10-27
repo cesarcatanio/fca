@@ -1,0 +1,104 @@
+package interfaz;
+
+import org.eclipse.jface.action.IMenuManager;
+import org.eclipse.jface.action.IToolBarManager;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Text;
+import org.eclipse.ui.part.ViewPart;
+import org.eclipse.swt.custom.ScrolledComposite;
+
+public class CompararViewPart extends ViewPart {
+
+	public static final String ID = "interfaz.CompararViewPart"; //$NON-NLS-1$
+	Text[][] matrizText;
+	String[][] matriz;
+	
+	Text[][] matrizTextB;
+	String[][] matrizB;
+
+	public CompararViewPart() {
+	}
+
+	/**
+	 * Create contents of the view part.
+	 * @param parent
+	 */
+	@Override
+	public void createPartControl(Composite parent) {
+		Composite container = new Composite(parent, SWT.NONE);
+		
+		Composite composite_1 = new Composite(container, SWT.NONE);
+		composite_1.setBounds(0, 0, 500, 400);
+		
+		Composite composite_2 = new Composite(container, SWT.NONE);
+		composite_2.setBounds(505, 0, 500, 400);
+
+		createActions();
+		initializeToolBar();
+		initializeMenu();
+	}
+	
+	public void crearMatriz(int f, int c) {
+
+		matrizText = new Text[f][c];
+		int x = 0;
+		int y = 0;
+		int w = 70;
+		int h = 30;
+
+		for (int i = 0; i < f; i++) {
+			for (int j = 0; j < c; j++) {
+
+				Text text = new Text(composite_1, SWT.BORDER);
+				text.setBounds(x, y, w, h);
+				y = y + h;
+
+				matrizText[i][j] = text;
+			}
+			y = 0;
+			x = x + w;
+		}
+	}
+
+	public void capturarDatosMatrizText() {
+
+		matriz = new String[matrizText.length][matrizText[0].length];
+
+		for (int i = 0; i < matrizText.length; i++) {
+			for (int j = 0; j < matrizText[0].length; j++) {
+				matriz[i][j] = matrizText[i][j].getText();
+				System.out.println(matriz[i][j]);
+			}
+		}
+
+	}
+
+	/**
+	 * Create the actions.
+	 */
+	private void createActions() {
+		// Create the actions
+	}
+
+	/**
+	 * Initialize the toolbar.
+	 */
+	private void initializeToolBar() {
+		IToolBarManager toolbarManager = getViewSite().getActionBars()
+				.getToolBarManager();
+	}
+
+	/**
+	 * Initialize the menu.
+	 */
+	private void initializeMenu() {
+		IMenuManager menuManager = getViewSite().getActionBars()
+				.getMenuManager();
+	}
+
+	@Override
+	public void setFocus() {
+		// Set the focus
+	}
+}

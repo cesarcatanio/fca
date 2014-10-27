@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="grafo" nsURI="http:///grafo.ecore" nsPrefix="grafo">
+  <eClassifiers xsi:type="ecore:EClass" name="Grafo">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listaNodos" upperBound="-1"
+        eType="#//Nodo" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listaEnlaces" upperBound="-1"
+        eType="#//Enlace" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listaMetaNodos" upperBound="-1"
+        eType="#//MetaNodo" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Nodo" eSuperTypes="#//Carateristica">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listaNodosAsociados" upperBound="-1"
+        eType="#//Nodo"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="metaNodo" eType="#//MetaNodo"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Enlace" eSuperTypes="#//Carateristica">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inicio" lowerBound="1"
+        eType="#//Nodo"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="objetivo" lowerBound="1"
+        eType="#//Nodo"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MetaNodo" eSuperTypes="#//Carateristica">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nodo" eType="#//Nodo"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Carateristica">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="texto" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="color" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

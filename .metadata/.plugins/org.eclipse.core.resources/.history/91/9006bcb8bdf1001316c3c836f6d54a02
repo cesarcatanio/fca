@@ -1,0 +1,130 @@
+package interfaz;
+
+import javax.swing.SwingConstants;
+
+import org.eclipse.jface.action.IMenuManager;
+import org.eclipse.jface.action.IToolBarManager;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.ui.part.ViewPart;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Text;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.ToolBar;
+import org.eclipse.swt.widgets.ToolItem;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+
+public class FCAViewPart extends ViewPart {
+
+	public static final String ID = "interfaz.FCAViewPart"; //$NON-NLS-1$
+	private Composite composite_2;
+	private Text text;
+	private Text text_1;
+	Composite composite_3;
+
+	public FCAViewPart() {
+		
+	}
+
+	/**
+	 * Create contents of the view part.
+	 * @param parent
+	 */
+	@Override
+	public void createPartControl(Composite parent) {
+		Composite container = new Composite(parent, SWT.NONE);
+		container.setLayout(null);
+		
+		Composite composite_1 = new Composite(container, SWT.NONE);
+		composite_1.setBounds(0, 32, 594, 428);
+		composite_1.setLayout(null);
+		
+		composite_2 = new Composite(composite_1, SWT.NONE);
+		composite_2.setBounds(0, 0, 594, 113);
+		composite_2.setLayout(null);
+		
+		Button btnCrearMatriz = new Button(composite_2, SWT.NONE);
+		btnCrearMatriz.setBounds(10, 74, 145, 30);
+		btnCrearMatriz.setText("Crear Matriz");
+		
+		Button btnCrearGrafo = new Button(composite_2, SWT.NONE);
+		btnCrearGrafo.setBounds(161, 10, 100, 57);
+		btnCrearGrafo.setText("Crear Grafo");
+		
+		text = new Text(composite_2, SWT.BORDER);
+		text.setBounds(105, 10, 50, 27);
+		
+		text_1 = new Text(composite_2, SWT.BORDER);
+		text_1.setBounds(105, 40, 50, 27);
+		
+		Label lblNewLabel = new Label(composite_2, SWT.NONE);
+		lblNewLabel.setBounds(10, 10, 75, 17);
+		lblNewLabel.setText("Filas");
+		
+		Label lblNewLabel_1 = new Label(composite_2, SWT.NONE);
+		lblNewLabel_1.setBounds(10, 40, 75, 17);
+		lblNewLabel_1.setText("Columnas");
+		
+		composite_3 = new Composite(composite_1, SWT.NONE);
+		composite_3.setBounds(0, 113, 594, 315);
+		composite_3.setLayout(new GridLayout(1, false));
+		
+		ToolBar toolBar = new ToolBar(container, SWT.FLAT | SWT.RIGHT);
+		toolBar.setBounds(0, 0, 594, 32);
+		
+		ToolItem tltmA = new ToolItem(toolBar, SWT.NONE);
+		tltmA.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+			}
+		});
+		tltmA.setText("Archivo");
+
+		createActions();
+		initializeToolBar();
+		initializeMenu();
+	}
+	
+//	public void crearMatriz(int filas, int columnas) {
+//
+//		Text[][] matriz = new Text[filas][columnas];
+//		for (int i = 0; i < matriz.length; i++) {
+//			for (int j = 0; j < matriz[0].length; j++) {
+//				Text text = new Text(composite_3, i);
+//				matriz[i][j] = text;
+//			}
+//		}
+//		matriz[0][0].setText("0");
+//		matriz[0][0].setVisible(false);
+//	}
+
+	/**
+	 * Create the actions.
+	 */
+	private void createActions() {
+		// Create the actions
+	}
+
+	/**
+	 * Initialize the toolbar.
+	 */
+	private void initializeToolBar() {
+		IToolBarManager toolbarManager = getViewSite().getActionBars()
+				.getToolBarManager();
+	}
+
+	/**
+	 * Initialize the menu.
+	 */
+	private void initializeMenu() {
+		IMenuManager menuManager = getViewSite().getActionBars()
+				.getMenuManager();
+	}
+
+	@Override
+	public void setFocus() {
+		// Set the focus
+	}
+}

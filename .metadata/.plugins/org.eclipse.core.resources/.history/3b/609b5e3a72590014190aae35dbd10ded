@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_K_OBgFlyEeStLYpisawykw" type="Ecore" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_K_OBgVlyEeStLYpisawykw" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OBgllyEeStLYpisawykw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OBg1lyEeStLYpisawykw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OBhFlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OBhVlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OBillyEeStLYpisawykw" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OBi1lyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OBjFlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OBjVlyEeStLYpisawykw" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OBjllyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OBj1lyEeStLYpisawykw"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCModelElement"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K_OBkFlyEeStLYpisawykw" x="1035" y="320"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_K_OBkVlyEeStLYpisawykw" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OBkllyEeStLYpisawykw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OBk1lyEeStLYpisawykw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OBlFlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OBlVlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OBlllyEeStLYpisawykw" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OBl1lyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OBmFlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OBmVlyEeStLYpisawykw" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OBmllyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OBm1lyEeStLYpisawykw"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCHeatExchanger"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K_OBnFlyEeStLYpisawykw" x="695" y="485"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_K_OBnVlyEeStLYpisawykw" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OBnllyEeStLYpisawykw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OBn1lyEeStLYpisawykw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OBoFlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OBoVlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OBollyEeStLYpisawykw" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OBo1lyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OBpFlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OBpVlyEeStLYpisawykw" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OBpllyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OBp1lyEeStLYpisawykw"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCPipe"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K_OBqFlyEeStLYpisawykw" x="725" y="355"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_K_OBqVlyEeStLYpisawykw" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OBqllyEeStLYpisawykw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OBq1lyEeStLYpisawykw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OBrFlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OBrVlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OBrllyEeStLYpisawykw" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OBr1lyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OBsFlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OBsVlyEeStLYpisawykw" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OBsllyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OBs1lyEeStLYpisawykw"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCSourceExhaustStart"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K_OBtFlyEeStLYpisawykw" x="860" y="30"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_K_OBtVlyEeStLYpisawykw" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OBtllyEeStLYpisawykw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OBt1lyEeStLYpisawykw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OBuFlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OBuVlyEeStLYpisawykw"/>
+      <layoutConstraint xmi:type="notation:Ratio" xmi:id="_K_OBullyEeStLYpisawykw" value="0.23076923076923078"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OBu1lyEeStLYpisawykw" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OBvFlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OBvVlyEeStLYpisawykw"/>
+      <layoutConstraint xmi:type="notation:Ratio" xmi:id="_K_OBvllyEeStLYpisawykw" value="0.23076923076923078"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OBv1lyEeStLYpisawykw" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OBwFlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OBwVlyEeStLYpisawykw"/>
+      <layoutConstraint xmi:type="notation:Ratio" xmi:id="_K_OBwllyEeStLYpisawykw" value="0.23076923076923078"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCVesselVertical"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K_OBw1lyEeStLYpisawykw" x="705" y="235"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_K_OBxFlyEeStLYpisawykw" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OBxVlyEeStLYpisawykw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OBxllyEeStLYpisawykw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OBx1lyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OByFlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OByVlyEeStLYpisawykw" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OByllyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OBy1lyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OBzFlyEeStLYpisawykw" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OBzVlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OBzllyEeStLYpisawykw"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCVesselHorizontal"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K_OBz1lyEeStLYpisawykw" x="685" y="150"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_K_OB0FlyEeStLYpisawykw" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OB0VlyEeStLYpisawykw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OB0llyEeStLYpisawykw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OB01lyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OB1FlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OB1VlyEeStLYpisawykw" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OB1llyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OB11lyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OB2FlyEeStLYpisawykw" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OB2VlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OB2llyEeStLYpisawykw"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCValve"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K_OB21lyEeStLYpisawykw" x="710" y="45"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_K_OB3FlyEeStLYpisawykw" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OB3VlyEeStLYpisawykw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OB3llyEeStLYpisawykw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OB31lyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OB4FlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OB4VlyEeStLYpisawykw" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OB4llyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OB41lyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OB5FlyEeStLYpisawykw" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OB5VlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OB5llyEeStLYpisawykw"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCValveManuel"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K_OB51lyEeStLYpisawykw" x="1050" y="140"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_K_OB6FlyEeStLYpisawykw" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OB6VlyEeStLYpisawykw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OB6llyEeStLYpisawykw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OB61lyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OB7FlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OB7VlyEeStLYpisawykw" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OB7llyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OB71lyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OB8FlyEeStLYpisawykw" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OB8VlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OB8llyEeStLYpisawykw"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCValveControl"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K_OB81lyEeStLYpisawykw" x="1225" y="140"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_K_OB9FlyEeStLYpisawykw" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OB9VlyEeStLYpisawykw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OB9llyEeStLYpisawykw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OB91lyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OB-FlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OB-VlyEeStLYpisawykw" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OB-llyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OB-1lyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OB_FlyEeStLYpisawykw" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OB_VlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OokFlyEeStLYpisawykw"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCPump"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K_OokVlyEeStLYpisawykw" x="1560" y="140"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_K_OokllyEeStLYpisawykw" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_Ook1lyEeStLYpisawykw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OolFlyEeStLYpisawykw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OolVlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OolllyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_Ool1lyEeStLYpisawykw" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OomFlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OomVlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OomllyEeStLYpisawykw" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_Oom1lyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OonFlyEeStLYpisawykw"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCPumpVacuum"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K_OonVlyEeStLYpisawykw" x="1690" y="140"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_K_OonllyEeStLYpisawykw" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_Oon1lyEeStLYpisawykw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OooFlyEeStLYpisawykw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OooVlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OoollyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_Ooo1lyEeStLYpisawykw" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OopFlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OopVlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OopllyEeStLYpisawykw" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_Oop1lyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OoqFlyEeStLYpisawykw"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCSystemEnd"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K_OoqVlyEeStLYpisawykw" x="1395" y="140"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_K_OoqllyEeStLYpisawykw" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_Ooq1lyEeStLYpisawykw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OorFlyEeStLYpisawykw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OorVlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OorllyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_Oor1lyEeStLYpisawykw" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OosFlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OosVlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OosllyEeStLYpisawykw" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_Oos1lyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OotFlyEeStLYpisawykw"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCJoint"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K_OotVlyEeStLYpisawykw" x="1870" y="140"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_K_OotllyEeStLYpisawykw" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_Oot1lyEeStLYpisawykw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OouFlyEeStLYpisawykw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OouVlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OoullyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OovVlyEeStLYpisawykw" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OovllyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_Oov1lyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OowFlyEeStLYpisawykw" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OowVlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OowllyEeStLYpisawykw"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCLocationNoLine"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K_Oow1lyEeStLYpisawykw" x="2000" y="140"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_K_OoxFlyEeStLYpisawykw" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OoxVlyEeStLYpisawykw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OoxllyEeStLYpisawykw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_Oox1lyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OoyFlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_Ooy1lyEeStLYpisawykw" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_OozFlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_OozVlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_OozllyEeStLYpisawykw" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_Ooz1lyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_Oo0FlyEeStLYpisawykw"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCLocationSolidLine"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K_Oo0VlyEeStLYpisawykw" x="1475" y="390"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_K_Oo0llyEeStLYpisawykw" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_Oo01lyEeStLYpisawykw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_Oo1FlyEeStLYpisawykw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_Oo1VlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_Oo1llyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_Oo2VlyEeStLYpisawykw" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_Oo2llyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_Oo21lyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_Oo3FlyEeStLYpisawykw" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_Oo3VlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_Oo3llyEeStLYpisawykw"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCLocationDashLine"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K_Oo31lyEeStLYpisawykw" x="1480" y="490"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_K_Oo4FlyEeStLYpisawykw" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_Oo4VlyEeStLYpisawykw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_Oo4llyEeStLYpisawykw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_Oo41lyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_Oo5FlyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_Oo5VlyEeStLYpisawykw" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_Oo5llyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_Oo51lyEeStLYpisawykw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_K_Oo6FlyEeStLYpisawykw" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K_Oo6VlyEeStLYpisawykw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K_Oo6llyEeStLYpisawykw"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCSourceExhaustEnd"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K_Oo61lyEeStLYpisawykw" x="1505" y="305"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_K_Oo7FlyEeStLYpisawykw"/>
+  <element xmi:type="ecore:EPackage" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_K_Oo7VlyEeStLYpisawykw" type="4003" source="_K_OBgVlyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_Oo7llyEeStLYpisawykw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_K_Oo71lyEeStLYpisawykw" x="-84" y="45"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_Oo8FlyEeStLYpisawykw" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_K_Oo8VlyEeStLYpisawykw" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_Oo8llyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xmi:type="ecore:EReference" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCModelElement/modelElements"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_Oo81lyEeStLYpisawykw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_Oo9FlyEeStLYpisawykw" type="4004" source="_K_OBkVlyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_Oo9VlyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_Oo9llyEeStLYpisawykw" points="[0, 0, -1122, -67]$[1122, 67, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_Oo91lyEeStLYpisawykw" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_Oo-FlyEeStLYpisawykw" id="(0.04285714285714286,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_Oo-VlyEeStLYpisawykw" type="4002" source="_K_OBnVlyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_Oo-llyEeStLYpisawykw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_K_Oo-1lyEeStLYpisawykw" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_Oo_FlyEeStLYpisawykw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_K_Oo_VlyEeStLYpisawykw" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_Oo_llyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xmi:type="ecore:EReference" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCPipe/fromElement"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_Oo_1lyEeStLYpisawykw" points="[0, 0, -969, -67]$[1, 6, -968, -61]$[969, 67, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpAFlyEeStLYpisawykw" id="(0.7424242424242424,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpAVlyEeStLYpisawykw" id="(0.17857142857142858,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpAllyEeStLYpisawykw" type="4002" source="_K_OBnVlyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OpA1lyEeStLYpisawykw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_K_OpBFlyEeStLYpisawykw" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OpBVlyEeStLYpisawykw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_K_OpBllyEeStLYpisawykw" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpB1lyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xmi:type="ecore:EReference" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCPipe/toElement"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpCFlyEeStLYpisawykw" points="[0, 0, -979, -67]$[32, 6, -947, -61]$[979, 67, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpCVlyEeStLYpisawykw" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpCllyEeStLYpisawykw" id="(0.1357142857142857,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpC1lyEeStLYpisawykw" type="4004" source="_K_OBnVlyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpDFlyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpDVlyEeStLYpisawykw" points="[0, 0, -989, -67]$[989, 67, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpDllyEeStLYpisawykw" id="(0.24242424242424243,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpD1lyEeStLYpisawykw" id="(0.08571428571428572,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpEFlyEeStLYpisawykw" type="4002" source="_K_OBqVlyEeStLYpisawykw" target="_K_OonllyEeStLYpisawykw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OpEVlyEeStLYpisawykw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_K_OpEllyEeStLYpisawykw" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OpE1lyEeStLYpisawykw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_K_OpFFlyEeStLYpisawykw" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpFVlyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xmi:type="ecore:EReference" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCSourceExhaustStart/fromElement"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpFllyEeStLYpisawykw" points="[0, 0, -459, -60]$[459, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpF1lyEeStLYpisawykw" id="(0.7533333333333333,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpGFlyEeStLYpisawykw" id="(0.3333333333333333,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpGVlyEeStLYpisawykw" type="4002" source="_K_OBqVlyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OpGllyEeStLYpisawykw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_K_OpG1lyEeStLYpisawykw" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OpHFlyEeStLYpisawykw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_K_OpHVlyEeStLYpisawykw" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpHllyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xmi:type="ecore:EReference" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCSourceExhaustStart/toElement"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpH1lyEeStLYpisawykw" points="[0, 0, -331, -179]$[0, 118, -331, -61]$[331, 179, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpIFlyEeStLYpisawykw" id="(0.5133333333333333,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpIVlyEeStLYpisawykw" id="(0.40714285714285714,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpIllyEeStLYpisawykw" type="4004" source="_K_OBqVlyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpI1lyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpJFlyEeStLYpisawykw" points="[0, 0, -363, -179]$[-65, 60, -428, -119]$[-65, 118, -428, -61]$[363, 179, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpJVlyEeStLYpisawykw" id="(0.25333333333333335,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpJllyEeStLYpisawykw" id="(0.35714285714285715,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpJ1lyEeStLYpisawykw" type="4004" source="_K_OBtVlyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpKFlyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpKVlyEeStLYpisawykw" points="[0, 0, -839, -67]$[839, 67, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpKllyEeStLYpisawykw" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpK1lyEeStLYpisawykw" id="(0.22142857142857142,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpLFlyEeStLYpisawykw" type="4004" source="_K_OBxFlyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpLVlyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpLllyEeStLYpisawykw" points="[0, 0, -661, -67]$[661, 67, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpL1lyEeStLYpisawykw" id="(0.49624060150375937,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpMFlyEeStLYpisawykw" id="(0.2714285714285714,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpMVlyEeStLYpisawykw" type="4004" source="_K_OB0FlyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpMllyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpM1lyEeStLYpisawykw" points="[0, 0, -504, -67]$[504, 67, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpNFlyEeStLYpisawykw" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpNVlyEeStLYpisawykw" id="(0.3142857142857143,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpNllyEeStLYpisawykw" type="4004" source="_K_OB3FlyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpN1lyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpOFlyEeStLYpisawykw" points="[0, 0, -165, -67]$[165, 67, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpOVlyEeStLYpisawykw" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpOllyEeStLYpisawykw" id="(0.45,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpO1lyEeStLYpisawykw" type="4004" source="_K_OB6FlyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpPFlyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpPVlyEeStLYpisawykw" points="[0, 0, 0, -67]$[0, 67, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpPllyEeStLYpisawykw" id="(0.49557522123893805,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpP1lyEeStLYpisawykw" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpQFlyEeStLYpisawykw" type="4004" source="_K_OB9FlyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpQVlyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpQllyEeStLYpisawykw" points="[0, 0, 301, -67]$[-301, 67, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpQ1lyEeStLYpisawykw" id="(0.4931506849315068,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpRFlyEeStLYpisawykw" id="(0.6,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpRVlyEeStLYpisawykw" type="4004" source="_K_OokllyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpRllyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpR1lyEeStLYpisawykw" points="[0, 0, 449, -67]$[-449, 67, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpSFlyEeStLYpisawykw" id="(0.49572649572649574,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpSVlyEeStLYpisawykw" id="(0.65,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpSllyEeStLYpisawykw" type="4004" source="_K_OonllyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpS1lyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpTFlyEeStLYpisawykw" points="[0, 0, 161, -67]$[-161, 67, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpTVlyEeStLYpisawykw" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpTllyEeStLYpisawykw" id="(0.55,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpT1lyEeStLYpisawykw" type="4004" source="_K_OoqllyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpUFlyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpUVlyEeStLYpisawykw" points="[0, 0, 596, -67]$[-596, 67, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpUllyEeStLYpisawykw" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpU1lyEeStLYpisawykw" id="(0.7,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpVFlyEeStLYpisawykw" type="4004" source="_K_OotllyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpVVlyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpVllyEeStLYpisawykw" points="[0, 0, 748, -60]$[-748, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpV1lyEeStLYpisawykw" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpWFlyEeStLYpisawykw" id="(0.75,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpWVlyEeStLYpisawykw" type="4004" source="_K_OoxFlyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpWllyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpW1lyEeStLYpisawykw" points="[0, 0, 1132, -60]$[-1132, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpXFlyEeStLYpisawykw" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpXVlyEeStLYpisawykw" id="(0.9,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpXllyEeStLYpisawykw" type="4004" source="_K_Oo0llyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpX1lyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpYFlyEeStLYpisawykw" points="[0, 0, 1324, -60]$[-1324, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpYVlyEeStLYpisawykw" id="(0.49640287769784175,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpYllyEeStLYpisawykw" id="(0.9428571428571428,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpY1lyEeStLYpisawykw" type="4002" source="_K_Oo4FlyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OpZFlyEeStLYpisawykw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_K_OpZVlyEeStLYpisawykw" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OpZllyEeStLYpisawykw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_K_OpZ1lyEeStLYpisawykw" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpaFlyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xmi:type="ecore:EReference" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCSourceExhaustEnd/fromElement"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpaVlyEeStLYpisawykw" points="[0, 0, 879, -179]$[70, 60, 949, -119]$[70, 118, 949, -61]$[-879, 179, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpallyEeStLYpisawykw" id="(0.7430555555555556,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_Opa1lyEeStLYpisawykw" id="(0.8428571428571429,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpbFlyEeStLYpisawykw" type="4002" source="_K_Oo4FlyEeStLYpisawykw" target="_K_OonllyEeStLYpisawykw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_OpbVlyEeStLYpisawykw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_K_OpbllyEeStLYpisawykw" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_K_Opb1lyEeStLYpisawykw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_K_OpcFlyEeStLYpisawykw" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpcVlyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xmi:type="ecore:EReference" href="platform:/resource/Ejemplo2Repositorios/model/LWC.ecore#//LWCSourceExhaustEnd/toElement"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_OpcllyEeStLYpisawykw" points="[0, 0, 670, -60]$[-670, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_Opc1lyEeStLYpisawykw" id="(0.24305555555555555,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpdFlyEeStLYpisawykw" id="(0.6666666666666666,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_K_OpdVlyEeStLYpisawykw" type="4004" source="_K_Oo4FlyEeStLYpisawykw" target="_K_OBgVlyEeStLYpisawykw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_K_OpdllyEeStLYpisawykw" fontName="Ubuntu"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K_Opd1lyEeStLYpisawykw" points="[0, 0, 849, -179]$[0, 118, 849, -61]$[-849, 179, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpeFlyEeStLYpisawykw" id="(0.4930555555555556,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K_OpeVlyEeStLYpisawykw" id="(0.8,0.0)"/>
+  </edges>
+</notation:Diagram>

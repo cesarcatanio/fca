@@ -1,0 +1,255 @@
+package interfaz;
+
+import java.awt.MenuBar;
+import java.awt.Rectangle;
+
+import javax.swing.SwingConstants;
+import javax.swing.ToolTipManager;
+import javax.swing.plaf.ToolTipUI;
+import javax.xml.bind.ParseConversionEvent;
+
+import org.eclipse.jface.action.IContributionManager;
+import org.eclipse.jface.action.IMenuManager;
+import org.eclipse.jface.action.IToolBarManager;
+import org.eclipse.jface.action.ToolBarManager;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.ui.PartInitException;
+import org.eclipse.ui.PlatformUI;
+import org.eclipse.ui.part.ViewPart;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Text;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.ToolBar;
+import org.eclipse.swt.widgets.ToolItem;
+import org.eclipse.swt.widgets.ToolTip;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.events.MouseTrackAdapter;
+import org.eclipse.swt.events.MouseEvent;
+import org.eclipse.swt.custom.ScrolledComposite;
+
+public class FCAViewPart extends ViewPart {
+
+	public static final String ID = "interfaz.FCAViewPart"; //$NON-NLS-1$
+	private Text text_F;
+	private Text text_C;
+	Composite compositeNuevaMatriz;
+	Composite compositeCrearMatriz;
+	Composite compositeMatriz;
+
+	String[][] matriz;
+	Text[][] matrizText;
+
+	public FCAViewPart() {
+
+	}
+
+	/**
+	 * Create contents of the view part.
+	 * 
+	 * @param parent
+	 */
+	@Override
+	public void createPartControl(final Composite parent) {
+		Composite container = new Composite(parent, SWT.NONE);
+		container.setLayout(null);
+
+		ToolBar toolBar = new ToolBar(container, SWT.FLAT | SWT.RIGHT);
+		toolBar.setBounds(0, 0, 594, 32);
+
+		ToolItem tltmNuevaMatriz = new ToolItem(toolBar, SWT.NONE);
+		tltmNuevaMatriz.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				System.out.println("entro");
+
+				compositeNuevaMatriz.setVisible(true);
+				compositeCrearMatriz.setVisible(true);
+
+				compositeMatriz.setVisible(false);
+			}
+		});
+		tltmNuevaMatriz.setText("Nueva Matriz");
+
+		ToolItem tltmComparar = new ToolItem(toolBar, SWT.NONE);
+		tltmComparar.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				CompararViewPart compararViewPart = new CompararViewPart();
+				int n = 0;
+				n ++;
+				
+				try {
+					PlatformUI
+							.getWorkbench()
+							.getActiveWorkbenchWindow()
+							.getActivePage()
+							.showView(compararViewPart.ID,"contentDescription", 1);
+
+				} catch (PartInitException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
+		tltmComparar.setText("Comparar");
+
+		ToolItem tltmGrafo = new ToolItem(toolBar, SWT.NONE);
+		tltmGrafo.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				System.out.println("entro");
+				capturarDatosMatrizText();
+			}
+		});
+		tltmGrafo.setText("Grafo");
+
+		ToolItem tltmCaracteristicas = new ToolItem(toolBar, SWT.NONE);
+		tltmCaracteristicas.setText("Caracteristicas");
+
+		ToolItem tltmImportar = new ToolItem(toolBar, SWT.NONE);
+		tltmImportar.setText("Importar");
+
+		ToolItem tltmExportar = new ToolItem(toolBar, SWT.NONE);
+		tltmExportar.setText("Exportar");
+
+		compositeNuevaMatriz = new Composite(container, SWT.NONE);
+		compositeNuevaMatriz.setBounds(0, 32, 594, 428);
+		compositeNuevaMatriz.setLayout(null);
+
+		compositeCrearMatriz = new Composite(compositeNuevaMatriz, SWT.NONE);
+		compositeCrearMatriz.setBounds(0, 0, 594, 113);
+		compositeCrearMatriz.setLayout(null);
+
+		Button btnCrearMatriz = new Button(compositeCrearMatriz, SWT.NONE);
+		btnCrearMatriz.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				System.out.println("entro");
+
+				int f = Integer.parseInt(text_F.getText());
+				int c = Integer.parseInt(text_C.getText());
+
+				compositeNuevaMatriz.setVisible(true);
+				renovarComposite_3();
+				compositeMatriz.setVisible(true);
+
+				compositeCrearMatriz.setVisible(false);
+
+				crearMatriz(f, c);
+			}
+		});
+		btnCrearMatriz.setBounds(10, 74, 145, 30);
+		btnCrearMatriz.setText("Crear Matriz");
+
+		text_F = new Text(compositeCrearMatriz, SWT.BORDER);
+		text_F.setBounds(105, 10, 50, 27);
+
+		text_C = new Text(compositeCrearMatriz, SWT.BORDER);
+		text_C.setBounds(105, 40, 50, 27);
+
+		Label lblNewLabel = new Label(compositeCrearMatriz, SWT.NONE);
+		lblNewLabel.setBounds(10, 10, 75, 17);
+		lblNewLabel.setText("Filas");
+
+		Label lblNewLabel_1 = new Label(compositeCrearMatriz, SWT.NONE);
+		lblNewLabel_1.setBounds(10, 40, 75, 17);
+		lblNewLabel_1.setText("Columnas");
+		
+		Composite composite = new Composite(compositeCrearMatriz, SWT.NONE);
+		composite.setBounds(0, 0, 500, 428);
+
+		compositeNuevaMatriz.setVisible(false);
+		
+				compositeMatriz = new Composite(compositeNuevaMatriz, SWT.NONE);
+				compositeMatriz.setBounds(0, 0, 594, 428);
+				compositeMatriz.setLayout(null);
+				
+				Composite compositeComparar = new Composite(container, SWT.NONE);
+				compositeComparar.setLocation(0, 32);
+				compositeComparar.setSize(1005, 428);
+		
+		
+
+		createActions();
+		initializeToolBar();
+		initializeMenu();
+	}
+
+
+	public void crearMatriz(int f, int c) {
+
+		matrizText = new Text[f][c];
+		int x = 0;
+		int y = 0;
+		int w = 70;
+		int h = 30;
+
+		for (int i = 0; i < f; i++) {
+			for (int j = 0; j < c; j++) {
+
+				Text text = new Text(compositeMatriz, SWT.BORDER);
+				text.setBounds(x, y, w, h);
+				y = y + h;
+
+				matrizText[i][j] = text;
+			}
+			y = 0;
+			x = x + w;
+		}
+	}
+
+	public void capturarDatosMatrizText() {
+
+		matriz = new String[matrizText.length][matrizText[0].length];
+
+		for (int i = 0; i < matrizText.length; i++) {
+			for (int j = 0; j < matrizText[0].length; j++) {
+				matriz[i][j] = matrizText[i][j].getText();
+				System.out.println(matriz[i][j]);
+			}
+		}
+
+	}
+
+	public void renovarComposite_3() {
+
+		Composite composite_aux = new Composite(compositeMatriz.getParent(),
+				compositeMatriz.getStyle());
+		composite_aux.setBounds(compositeMatriz.getBounds());
+		composite_aux.setLayout(compositeMatriz.getLayout());
+
+		compositeMatriz = composite_aux;
+	}
+
+	/**
+	 * Create the actions.
+	 */
+	private void createActions() {
+		// Create the actions
+
+	}
+
+	/**
+	 * Initialize the toolbar.
+	 */
+	private void initializeToolBar() {
+		IToolBarManager toolbarManager = getViewSite().getActionBars()
+				.getToolBarManager();
+	}
+
+	/**
+	 * Initialize the menu.
+	 */
+	private void initializeMenu() {
+		IMenuManager menuManager = getViewSite().getActionBars()
+				.getMenuManager();
+	}
+
+	@Override
+	public void setFocus() {
+		// Set the focus
+	}
+}

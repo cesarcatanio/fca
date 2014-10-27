@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;numero&apos; in &apos;interfaz.VentanaIngresarMatriz&apos; to &apos;rename&apos;&#x0A;- Original project: &apos;grafo.view&apos;&#x0A;- Original element: &apos;interfaz.VentanaIngresarMatriz.numero&apos;&#x0A;- Renamed element: &apos;interfaz.VentanaIngresarMatriz.rename&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;numero&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;interfaz{VentanaIngresarMatriz.java[VentanaIngresarMatriz^numero" name="rename" references="true" setter="false" stamp="1400965283154" textual="false" version="1.0"/>
+</session>

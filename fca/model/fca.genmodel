@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fca/src" modelPluginID="fca" modelName="Fca" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.rose" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>/home/u/Documentos/proyecto/proyecto/modelo/fca/fca.mdl</foreignModel>
+  <genPackages prefix="Fca" disposableProviderFactory="true" ecorePackage="fca.ecore#/">
+    <genClasses ecoreClass="fca.ecore#//Fca">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fca.ecore#//Fca/reglaUno"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fca.ecore#//Fca/configuracion"/>
+      <genOperations ecoreOperation="fca.ecore#//Fca/crearGrafo"/>
+    </genClasses>
+    <genClasses ecoreClass="fca.ecore#//ReglaUno">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fca.ecore#//ReglaUno/ajuste"/>
+      <genOperations ecoreOperation="fca.ecore#//ReglaUno/analizarUno"/>
+      <genOperations ecoreOperation="fca.ecore#//ReglaUno/analizarDos"/>
+      <genOperations ecoreOperation="fca.ecore#//ReglaUno/buscarSuperFila"/>
+    </genClasses>
+    <genClasses ecoreClass="fca.ecore#//Configuracion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fca.ecore#//Configuracion/serie"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fca.ecore#//Configuracion/ruta"/>
+      <genOperations ecoreOperation="fca.ecore#//Configuracion/exportar"/>
+      <genOperations ecoreOperation="fca.ecore#//Configuracion/importar"/>
+    </genClasses>
+    <genClasses ecoreClass="fca.ecore#//Ajuste">
+      <genOperations ecoreOperation="fca.ecore#//Ajuste/eliminarFila"/>
+      <genOperations ecoreOperation="fca.ecore#//Ajuste/eliminarColumna"/>
+      <genOperations ecoreOperation="fca.ecore#//Ajuste/contarAtributosFila"/>
+      <genOperations ecoreOperation="fca.ecore#//Ajuste/contarObjetosColumna"/>
+      <genOperations ecoreOperation="fca.ecore#//Ajuste/combinarObjetoAtributo"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

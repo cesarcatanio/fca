@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:model="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.omg.org/spec/BPMN/20100524/MODEL">
+  <xsd:import namespace="http://www.omg.org/XMI" schemaLocation="platform:/plugin/org.eclipse.emf.ecore/model/XMI.xsd"/>
+  <xsd:complexType name="DocumentRoot">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+  </xsd:complexType>
+  <xsd:element name="DocumentRoot" type="model:DocumentRoot"/>
+  <xsd:complexType name="tDefinitions">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="extension" nillable="true" type="xsd:string"/>
+      <xsd:element name="rootElement" nillable="true" type="xsd:string"/>
+      <xsd:element name="BPMNDiagram" nillable="true" type="xsd:string"/>
+      <xsd:element name="relationship" nillable="true" type="xsd:string"/>
+      <xsd:element name="import" type="model:tImport"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="exporter" type="xsd:string"/>
+    <xsd:attribute name="exporterVersion" type="xsd:string"/>
+    <xsd:attribute name="expressionLanguage" type="xsd:string"/>
+    <xsd:attribute name="id" type="xsd:string"/>
+    <xsd:attribute name="name" type="xsd:string"/>
+    <xsd:attribute name="targetNamespace" type="xsd:string" use="required"/>
+    <xsd:attribute name="typeLanguage" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="tDefinitions" type="model:tDefinitions"/>
+  <xsd:complexType name="tImport">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="importType" type="xsd:string" use="required"/>
+    <xsd:attribute name="location" type="xsd:string" use="required"/>
+    <xsd:attribute name="namespace" type="xsd:string" use="required"/>
+  </xsd:complexType>
+  <xsd:element name="tImport" type="model:tImport"/>
+</xsd:schema>

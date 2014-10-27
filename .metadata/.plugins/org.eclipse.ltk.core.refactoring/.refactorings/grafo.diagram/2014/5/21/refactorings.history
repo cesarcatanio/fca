@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;color&apos; in &apos;grafo.diagram.edit.parts.EnlaceEditPart.EnlaceFigure.EnlaceFigure(...)&apos; to &apos;nombre&apos;&#x0A;- Original project: &apos;grafo.diagram&apos;&#x0A;- Original element: &apos;grafo.diagram.edit.parts.EnlaceEditPart.EnlaceFigure.EnlaceFigure(EnlaceEditPart).color&apos;&#x0A;- Renamed element: &apos;color&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;color&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;grafo.diagram.edit.parts{EnlaceEditPart.java[EnlaceEditPart[EnlaceFigure~EnlaceFigure~QEnlaceEditPart;@color!1938!1968!1945!1949!QString;!0!false" name="nombre" references="true" stamp="1400963284851" version="1.0"/>
+</session>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Sample Category"
+            id="grafo.view">
+      </category>
+      <view
+            name="Sample View"
+            icon="icons/sample.gif"
+            category="grafo.view"
+            class="grafo.view.views.SampleView"
+            id="grafo.view.views.SampleView">
+      </view>
+      <view
+            class="viewPart.Vista1"
+            id="viewPart.Vista1"
+            name="Vista1">
+      </view>
+      <view
+            class="viewPart.Vista2"
+            id="viewPart.Vista2"
+            name="Vista2">
+      </view>
+      <view
+            class="interfaz.FCAViewPart"
+            icon="icons/sample.gif"
+            id="interfaz.VistaFCA"
+            name="Analizador FCA">
+      </view>
+      <view
+            class="interfaz.CompararViewPart"
+            id="interfaz.CompararViewPart"
+            name="Comparar">
+      </view>
+      <view
+            class="interfaz.Matriz"
+            id="interfaz.Matriz"
+            name="Matriz">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <view
+               ratio="0.5"
+               relative="org.eclipse.ui.views.ProblemView"
+               relationship="right"
+               id="grafo.view.views.SampleView">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+
+</plugin>

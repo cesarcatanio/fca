@@ -1,0 +1,63 @@
+package interfaz;
+
+import org.eclipse.jface.action.IMenuManager;
+import org.eclipse.jface.action.IToolBarManager;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.ui.part.ViewPart;
+import org.eclipse.swt.custom.ScrolledComposite;
+
+public class CompararViewPart extends ViewPart {
+
+	public static final String ID = "interfaz.CompararViewPart"; //$NON-NLS-1$
+
+	public CompararViewPart() {
+	}
+
+	/**
+	 * Create contents of the view part.
+	 * @param parent
+	 */
+	@Override
+	public void createPartControl(Composite parent) {
+		Composite container = new Composite(parent, SWT.NONE);
+		
+		Composite composite_1 = new Composite(container, SWT.NONE);
+		composite_1.setBounds(0, 0, 500, 400);
+		
+		Composite composite_2 = new Composite(container, SWT.NONE);
+		composite_2.setBounds(505, 0, 500, 400);
+
+		createActions();
+		initializeToolBar();
+		initializeMenu();
+	}
+
+	/**
+	 * Create the actions.
+	 */
+	private void createActions() {
+		// Create the actions
+	}
+
+	/**
+	 * Initialize the toolbar.
+	 */
+	private void initializeToolBar() {
+		IToolBarManager toolbarManager = getViewSite().getActionBars()
+				.getToolBarManager();
+	}
+
+	/**
+	 * Initialize the menu.
+	 */
+	private void initializeMenu() {
+		IMenuManager menuManager = getViewSite().getActionBars()
+				.getMenuManager();
+	}
+
+	@Override
+	public void setFocus() {
+		// Set the focus
+	}
+}

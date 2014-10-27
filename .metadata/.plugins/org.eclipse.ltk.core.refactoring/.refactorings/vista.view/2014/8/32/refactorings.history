@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;scrolledComposite&apos; in &apos;interfaz.FCAViewPart.createPartControl(...)&apos; to &apos;scrolledCompositeMatriz&apos;&#x0A;- Original project: &apos;vista.view&apos;&#x0A;- Original element: &apos;interfaz.FCAViewPart.createPartControl(Composite).scrolledComposite&apos;&#x0A;- Renamed element: &apos;scrolledComposite&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;scrolledComposite&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;interfaz{FCAViewPart.java[FCAViewPart~createPartControl~QComposite;@scrolledComposite!10982!11100!11000!11016!QScrolledComposite;!0!false" name="scrolledCompositeMatriz" references="true" stamp="1407360518775" version="1.0"/>
+</session>

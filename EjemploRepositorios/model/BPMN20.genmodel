@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/EjemploRepositorios/src" modelPluginID="EjemploRepositorios"
+    modelName="BPMN20" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.xsd.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>file:/media/u/César/BPMN20.xsd</foreignModel>
+  <genPackages prefix="Model" basePackage="org.omg.spec.bpmn._20100524" resource="XML"
+      disposableProviderFactory="true" ecorePackage="model.ecore#/">
+    <genClasses ecoreClass="model.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference model.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference model.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//DocumentRoot/definitions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//DocumentRoot/import"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//TDefinitions">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//TDefinitions/import"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//TDefinitions/extension"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//TDefinitions/rootElement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//TDefinitions/bPMNDiagram"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//TDefinitions/relationship"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//TDefinitions/exporter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//TDefinitions/exporterVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//TDefinitions/expressionLanguage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//TDefinitions/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//TDefinitions/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//TDefinitions/targetNamespace"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//TDefinitions/typeLanguage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute model.ecore#//TDefinitions/anyAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//TImport">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//TImport/importType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//TImport/location"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//TImport/namespace"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

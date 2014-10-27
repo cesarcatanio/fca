@@ -1,0 +1,10 @@
+1402332157131	Rename field 'jTextFieldMatriz'
+1402332348304	Rename method 'importarMatriz'
+1402332363095	Rename method 'llenarTabla'
+1402361613001	Delete element
+1402426094166	Delete element
+1402426103442	Copy compilation units
+1402426111209	Delete element
+1402511717543	Rename type 'VistaFCA'
+1402513735447	Rename local variable 'jTextFieldTabla'
+1402546361093	Rename field 'matrizText'

@@ -1,0 +1,143 @@
+package interfaz;
+
+import org.eclipse.jface.action.IMenuManager;
+import org.eclipse.jface.action.IToolBarManager;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Text;
+import org.eclipse.ui.part.ViewPart;
+import org.eclipse.swt.custom.ScrolledComposite;
+
+public class CompararViewPart extends ViewPart {
+
+	public static final String ID = "interfaz.CompararViewPart"; //$NON-NLS-1$
+	Composite composite_1;
+	Composite composite_2;
+	
+	Text[][] matrizTextA;
+	String[][] matrizA;
+	
+	Text[][] matrizTextB;
+	String[][] matrizB;
+
+	public CompararViewPart() {
+		crearMatrizA();
+		crearMatrizB();
+	}
+
+	/**
+	 * Create contents of the view part.
+	 * @param parent
+	 */
+	@Override
+	public void createPartControl(Composite parent) {
+		Composite container = new Composite(parent, SWT.NONE);
+		
+		composite_1 = new Composite(container, SWT.NONE);
+		composite_1.setBounds(0, 0, 500, 400);
+		
+		composite_2 = new Composite(container, SWT.NONE);
+		composite_2.setBounds(505, 0, 500, 400);
+
+		createActions();
+		initializeToolBar();
+		initializeMenu();
+	}
+	int f = 7;
+	int c = 6;
+	
+//	public void crearMatrizA(int f, int c) {
+	public void crearMatrizA() {
+		matrizTextA = new Text[f][c];
+		int x = 0;
+		int y = 0;
+		int w = 70;
+		int h = 30;
+
+		for (int i = 0; i < f; i++) {
+			for (int j = 0; j < c; j++) {
+
+				Text text = new Text(composite_1, SWT.BORDER);
+				text.setBounds(x, y, w, h);
+				y = y + h;
+
+				matrizTextA[i][j] = text;
+			}
+			y = 0;
+			x = x + w;
+		}
+	}
+
+	public void capturarDatosMatrizTextA() {
+
+		matrizA = new String[matrizTextA.length][matrizTextA[0].length];
+
+		for (int i = 0; i < matrizTextA.length; i++) {
+			for (int j = 0; j < matrizTextA[0].length; j++) {
+				matrizA[i][j] = matrizTextA[i][j].getText();
+			}
+		}
+
+	}
+//	public void crearMatrizB(int f, int c) {
+	public void crearMatrizB() {
+		matrizTextB = new Text[f][c];
+		int x = 0;
+		int y = 0;
+		int w = 70;
+		int h = 30;
+
+		for (int i = 0; i < f; i++) {
+			for (int j = 0; j < c; j++) {
+
+				Text text = new Text(composite_2, SWT.BORDER);
+				text.setBounds(x, y, w, h);
+				y = y + h;
+
+				matrizTextB[i][j] = text;
+			}
+			y = 0;
+			x = x + w;
+		}
+	}
+
+	public void capturarDatosMatrizTextB() {
+
+		matrizA = new String[matrizTextB.length][matrizTextB[0].length];
+
+		for (int i = 0; i < matrizTextB.length; i++) {
+			for (int j = 0; j < matrizTextB[0].length; j++) {
+				matrizA[i][j] = matrizTextB[i][j].getText();
+			}
+		}
+
+	}
+
+	/**
+	 * Create the actions.
+	 */
+	private void createActions() {
+		// Create the actions
+	}
+
+	/**
+	 * Initialize the toolbar.
+	 */
+	private void initializeToolBar() {
+		IToolBarManager toolbarManager = getViewSite().getActionBars()
+				.getToolBarManager();
+	}
+
+	/**
+	 * Initialize the menu.
+	 */
+	private void initializeMenu() {
+		IMenuManager menuManager = getViewSite().getActionBars()
+				.getMenuManager();
+	}
+
+	@Override
+	public void setFocus() {
+		// Set the focus
+	}
+}

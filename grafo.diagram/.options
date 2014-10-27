@@ -1,0 +1,7 @@
+# Tracing options for the grafo.diagram plug-in
+
+# Common issues
+grafo.diagram/debug=false
+
+# Visual IDs
+grafo.diagram/debug/visualID=false

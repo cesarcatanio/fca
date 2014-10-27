@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="fca" nsURI="http:///fca.ecore" nsPrefix="fca">
+  <eClassifiers xsi:type="ecore:EClass" name="Fca">
+    <eOperations name="crearGrafo"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="reglaUno" eType="#//ReglaUno"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="configuracion" eType="#//Configuracion"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReglaUno">
+    <eOperations name="analizarUno"/>
+    <eOperations name="analizarDos"/>
+    <eOperations name="buscarSuperFila"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ajuste" eType="#//Ajuste"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Configuracion">
+    <eOperations name="exportar"/>
+    <eOperations name="importar"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="serie" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ruta" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ajuste">
+    <eOperations name="eliminarFila"/>
+    <eOperations name="eliminarColumna"/>
+    <eOperations name="contarAtributosFila"/>
+    <eOperations name="contarObjetosColumna"/>
+    <eOperations name="combinarObjetoAtributo"/>
+  </eClassifiers>
+</ecore:EPackage>
