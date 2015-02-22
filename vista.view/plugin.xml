@@ -41,6 +41,16 @@
             id="interfaz.Matriz"
             name="Matriz">
       </view>
+      <view
+            class="grafo.view.views.aaaa"
+            id="interfaz.aaaa"
+            name="aaaa">
+      </view>
+      <view
+            class="grafo.view.views.aaaa"
+            id="interfaz.aaaa"
+            name="New ViewPart">
+      </view>
    </extension>
    <extension
          point="org.eclipse.ui.perspectiveExtensions">

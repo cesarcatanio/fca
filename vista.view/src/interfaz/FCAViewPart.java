@@ -1,59 +1,35 @@
 package interfaz;
 
-import java.awt.Color;
-import java.awt.MenuBar;
-import java.awt.MenuItem;
-import java.awt.Rectangle;
-import java.awt.dnd.DropTarget;
+import java.io.File;
 import java.util.ArrayList;
 
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
-import javax.swing.SwingConstants;
-import javax.swing.ToolTipManager;
-import javax.swing.plaf.ToolTipUI;
-import javax.swing.text.StyleConstants.ColorConstants;
-import javax.xml.bind.ParseConversionEvent;
-import javax.xml.bind.Marshaller.Listener;
 
 import logica.Logica;
+import logica.Logicaf;
 
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.gmf.runtime.notation.Diagram;
-import org.eclipse.jface.action.IContributionManager;
 import org.eclipse.jface.action.IMenuManager;
 import org.eclipse.jface.action.IToolBarManager;
-import org.eclipse.jface.action.ToolBarManager;
-import org.eclipse.osgi.service.environment.Constants;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.WorkbenchException;
-import org.eclipse.ui.internal.PlatformUIPreferenceListener;
 import org.eclipse.ui.part.ViewPart;
-import org.eclipse.ui.views.IViewCategory;
-import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
-import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.ToolBar;
 import org.eclipse.swt.widgets.ToolItem;
-import org.eclipse.swt.widgets.ToolTip;
-import org.eclipse.swt.events.DragDetectEvent;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
-import org.eclipse.swt.events.MouseTrackAdapter;
-import org.eclipse.swt.events.MouseEvent;
-import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.custom.ScrolledComposite;
 import org.eclipse.swt.widgets.Combo;
-import org.eclipse.swt.widgets.Menu;
+import org.eclipse.swt.widgets.Group;
 
 public class FCAViewPart extends ViewPart {
 
 	public static final String ID = "interfaz.FCAViewPart"; //$NON-NLS-1$
+	
+	public Logicaf logica= new Logicaf();
 
 	Composite parent;
 	Composite container;
@@ -66,7 +42,7 @@ public class FCAViewPart extends ViewPart {
 	Composite compositeNuevaMatriz;
 	Composite compositeCrearMatriz;
 	Composite compositeMatriz;
-	ScrolledComposite scrolledCompositeMatriz;
+//	ScrolledComposite scrolledCompositeMatriz;
 	String[][] matriz;
 	Text[][] matrizText;
 	Text text_F;
@@ -85,7 +61,13 @@ public class FCAViewPart extends ViewPart {
 	Composite compositeZachman;
 	Text[][] matrizTextZachman;
 	
-	Composite compositeLenguajes;
+	Composite compositePrueba;
+	ScrolledComposite scrolledCompositePrueba;
+	Text textPrueba;
+	
+	ArrayList<String>leng1;
+	ArrayList<String>leng2;
+//	Text[][] cells;
 	
 	static final int FILAS_ZACHMAN = 6;
 	static final int COLUMNAS_ZACHMAN = 7;
@@ -108,6 +90,8 @@ public class FCAViewPart extends ViewPart {
 		this.parent = parent;
 		container = new Composite(parent, SWT.NONE);
 		container.setLayout(null);
+		
+	
 
 		toolBar = new ToolBar(container, SWT.FLAT | SWT.RIGHT);
 		toolBar.setBounds(0, 0, 1005, 32);
@@ -290,71 +274,52 @@ public class FCAViewPart extends ViewPart {
 				tltmZachman
 				.setToolTipText("Accion, permite visualizar clasificar el lenguaje UML\n mediante la taxonomia zachman");
 
-		ToolItem tltmLenguajes = new ToolItem(toolBar, 0);
-		
-		tltmLenguajes.addSelectionListener(new SelectionAdapter() {
+		ToolItem tltmPrueba = new ToolItem(toolBar, 0);
+		// tltmArchivo.setSelection(true);
+		tltmPrueba.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				//organizo la interfaz
-//				negarComposites();
-//				renovarCompositeMatriz();
-				
-				//creo la interfaz
-				compositeLenguajes = new Composite(container, SWT.NONE);
-				compositeLenguajes.setLocation(0, 32);
-				compositeLenguajes.setSize(300, 250);
-				compositeLenguajes.setVisible(false);
-				compositeLenguajes.setLayout(null);
-				
-				Combo comboFilas = new Combo(compositeLenguajes, SWT.NONE);
-				comboFilas.setBounds(70, 0, 115, 30);
-				comboFilas.add("bpm");
-				comboFilas.add("Petri");
-				
-				
-				Combo comboColumnas = new Combo(compositeLenguajes, SWT.NONE);
-				comboColumnas.setBounds(70, 40, 115, 30);
-				comboColumnas.add("bpm");
-				comboColumnas.add("Petri");
-				
-				Label lblFilasLenguaje = new Label(compositeLenguajes, SWT.NONE);
-				lblFilasLenguaje.setBounds(0, 0, 70, 30);
-				lblFilasLenguaje.setText("Filas");
-				
-				Label lblColumnasLenguaje = new Label(compositeLenguajes, SWT.NONE);
-				lblColumnasLenguaje.setBounds(0, 40, 70, 30);
-				lblColumnasLenguaje.setText("Columnas");
-				
-				Button btnCompararLenguajes = new Button(compositeLenguajes, SWT.NONE);
-				btnCompararLenguajes.setBounds(70, 80, 115, 30);
-				btnCompararLenguajes.setText("Comparar");
+				// for (int i = 0; i <
+				// PlatformUI.getWorkbench().getViewRegistry()
+				// .getCategories().length; i++) {
+				// System.out.println(""
+				// + PlatformUI.getWorkbench().getViewRegistry()
+				// .getCategories()[i].getId());
+				// }
+				// for (int i = 0; i <
+				// PlatformUI.getWorkbench().getViewRegistry()
+				// .getCategories().length; i++) {
+				// if (PlatformUI.getWorkbench().getViewRegistry()
+				// .getCategories()[i].getId().equals("grafo.view")) {
+				// System.out.println(""
+				// + PlatformUI.getWorkbench().getViewRegistry()
+				// .getCategories()[i].getId()+""+i);
+				// IViewCategory ivc =
+				// PlatformUI.getWorkbench().getViewRegistry()
+				// .getCategories()[i];
+				//
+				// for (int j = 0; j < ivc.getViews().length; j++) {
+				// String a = ivc.getViews()[j].getId();
+				// System.out.println(a);
+				// }
+				//
+				//
+				// }
+				//
+				// }
 				
 				
 
-//				int itemFila = comboFilas.getSelectionIndex();
-//				int itemColumna = comboColumnas.getSelectionIndex();
-//				Logica logica = new Logica();
-//				String ruta = "";
-				
-				
-//				if (itemFila == 0) {
-//					ruta = "/home/u/Documentos/proyecto/proyecto/workspace/vista.view/src/matrices/12.txt";
-//					String matrizOut[][] = logica.importarMatriz(ruta);
-//					crearMatriz(matrizOut.length, matrizOut[0].length);
-//					matriz = matrizOut;
-//
-//					llenarMatrizText();
-//				}
-//				compositeNuevaMatriz.setVisible(true);
-//				compositeMatriz.setVisible(true);
-				
-//				compositeLenguajes.setVisible(true);
+				negarComposites();
+				compositePrueba.setVisible(true);
+				scrolledCompositePrueba.setVisible(true);
+				textPrueba.setVisible(true);
 				
 
 			}
 		});
-		tltmLenguajes.setText("Comparación de Lenguajes");
-		tltmLenguajes
+		tltmPrueba.setText("Prueba");
+		tltmPrueba
 				.setToolTipText("Archivo, este menu contine \nlas acciones principales de la aplicación");
 		/**
 		 * // tltmArchivo.addSelectionListener(tltmNuevaMatriz.getSelection());
@@ -417,7 +382,13 @@ public class FCAViewPart extends ViewPart {
 				compositeMatriz = new Composite(compositeNuevaMatriz, SWT.NONE);
 				compositeMatriz.setBounds(0, 0, 594, 428);
 				compositeMatriz.setLayout(null);
-				
+				/*
+				scrolledCompositeMatriz = new ScrolledComposite(compositeMatriz, SWT.BORDER | SWT.H_SCROLL | SWT.V_SCROLL);
+				scrolledCompositeMatriz.setLocation(0, 0);
+				scrolledCompositeMatriz.setSize(551, 196);
+				scrolledCompositeMatriz.setExpandHorizontal(true);
+				scrolledCompositeMatriz.setExpandVertical(true);
+				*/
 				
 		compositeComparar = new Composite(container, SWT.NONE);
 		compositeComparar.setLocation(0, 32);
@@ -462,17 +433,17 @@ public class FCAViewPart extends ViewPart {
 		btnComparar.setToolTipText("Accion, compara dos matrices");
 
 		compositeCaracteristicas = new Composite(container, SWT.NONE);
-		compositeCaracteristicas.setBounds(0, 32, 595, 113);
+		compositeCaracteristicas.setBounds(0, 32, 595, 373);
+
+		Label lblUsuario = new Label(compositeCaracteristicas, SWT.NONE);
+		lblUsuario.setLocation(10, 10);
+		lblUsuario.setSize(70, 17);
+		lblUsuario.setText("Usuario");
 
 		Label lblSintaxis = new Label(compositeCaracteristicas, SWT.NONE);
 		lblSintaxis.setLocation(230, 10);
 		lblSintaxis.setSize(70, 17);
 		lblSintaxis.setText("Sintaxis");
-		
-				Label lblUsuario = new Label(compositeCaracteristicas, SWT.NONE);
-				lblUsuario.setLocation(10, 10);
-				lblUsuario.setSize(70, 17);
-				lblUsuario.setText("Usuario");
 
 		final Combo comboUsuario = new Combo(compositeCaracteristicas, SWT.NONE);
 		comboUsuario.setLocation(10, 40);
@@ -556,7 +527,120 @@ public class FCAViewPart extends ViewPart {
 		btnAceptar.setText("Aceptar");
 		btnAceptar.setToolTipText("Crea el perfil del usuario");
 		
+		Group group = new Group(compositeCaracteristicas, SWT.NONE);
+		group.setLayout(null);
+		group.setText("Opciones");
+		group.setBounds(375, 200, 156, 104);
 		
+		Button cLenguajes = new Button(group, SWT.NONE);
+		cLenguajes.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e)  {
+				crearMatriz(leng1.size(),leng2.size());
+				llenarMatriz(leng1, leng2);
+				
+//				matrizText = cells;
+//				compositeMatriz.setVisible(true);
+				
+				negarComposites();
+				compositeNuevaMatriz.setVisible(true);
+				compositeMatriz.setVisible(true);
+//				ubicarMatrizText(scrolledCompositeMatriz,matrizText);
+//				scrolledCompositeMatriz.setVisible(true);
+				renovarCompositeMatriz();
+				
+
+				
+//				redimensionarScrolledComposite();
+			}
+		});
+		cLenguajes.setText("Cargar Lenguajes");
+		cLenguajes.setBounds(10, 24, 135, 27);
+		
+		Button compararLenguajes = new Button(group, SWT.NONE);
+		compararLenguajes.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				
+			}
+		});
+		compararLenguajes.setText("Comparar");
+		compararLenguajes.setBounds(10, 57, 135, 27);
+		
+		Group group_1 = new Group(compositeCaracteristicas, SWT.NONE);
+		group_1.setLayout(null);
+		group_1.setText("Selección de  Lenguajes");
+		group_1.setBounds(10, 200, 331, 104);
+		
+		Label label = new Label(group_1, SWT.NONE);
+		label.setText("Filas");
+		label.setBounds(10, 29, 62, 15);
+		
+		Label label_1 = new Label(group_1, SWT.NONE);
+		label_1.setText("Columnas");
+		label_1.setBounds(10, 68, 62, 15);
+		
+		final Label lblLeng1 = new Label(group_1, SWT.NONE);
+		lblLeng1.setBounds(222, 29, 99, 27);
+		
+		final Label lblLeng2 = new Label(group_1, SWT.NONE);
+		lblLeng2.setBounds(222, 68, 99, 27);
+		
+		Button sFila = new Button(group_1, SWT.NONE);
+		sFila.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				String ruta="";
+				JFileChooser chooser = new JFileChooser();
+				if(chooser.showOpenDialog(null)==JFileChooser.APPROVE_OPTION){
+					 ruta=chooser.getSelectedFile().getAbsolutePath();
+					 leng1=logica.leerEcore(ruta);
+					 lblLeng1.setText(new File(ruta).getName());
+					 
+				}
+				else{
+					JOptionPane.showMessageDialog(null, "Debe especificar una ruta");
+				}
+			}
+		});
+		sFila.setText("Seleccionar...");
+		sFila.setBounds(92, 29, 110, 27);
+		
+		Button sColumna = new Button(group_1, SWT.NONE);
+		sColumna.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				String ruta="";
+				JFileChooser chooser = new JFileChooser();
+				if(chooser.showOpenDialog(null)==JFileChooser.APPROVE_OPTION){
+					 ruta=chooser.getSelectedFile().getAbsolutePath();
+					 leng2=logica.leerEcore(ruta);
+					 lblLeng2.setText(new File(ruta).getName());
+				}
+				else{
+					JOptionPane.showMessageDialog(null, "Debe especificar una ruta");
+				}
+			}
+		});
+		sColumna.setText("Seleccionar...");
+		sColumna.setBounds(92, 68, 110, 27);
+		
+		
+		
+		compositePrueba = new Composite(container, SWT.NONE);
+		compositePrueba.setLocation(0, 32);
+		compositePrueba.setSize(200, 200);
+		compositePrueba.setVisible(false);
+		
+		scrolledCompositePrueba = new ScrolledComposite(compositePrueba, SWT.BORDER | SWT.H_SCROLL | SWT.V_SCROLL);
+		scrolledCompositePrueba.setBounds(0, 0, 69, 69);
+		scrolledCompositePrueba.setExpandHorizontal(true);
+		scrolledCompositePrueba.setExpandVertical(true);
+		scrolledCompositePrueba.setVisible(false);
+		
+		textPrueba = new Text(compositePrueba, SWT.BORDER);
+		textPrueba.setSize(300, 27);
+		textPrueba.setVisible(false);
 		
 		compositeZachman = new Composite(container, SWT.NONE);
 		compositeZachman.setBounds(0, 32, 600, 428);
@@ -567,6 +651,44 @@ public class FCAViewPart extends ViewPart {
 		initializeMenu();
 		negarComposites();
 	}
+	
+	////////////////////////////////////////////////////////////////////////////////////
+	public void crearMatrizLenguajes(int f, int c) {
+		matrizText = new Text[f][c];
+		int x = 0; 
+		int y = 0;
+		int w = 100;
+		int h = 30;
+		int p=0;
+		
+		for (int i = 0; i < f; i++) {
+			for (int j = 0; j < c; j++) {
+
+				Text text = new Text(compositeMatriz, SWT.BORDER);
+				text.setBounds(x, y, w, h);
+//				text.setSize(2, 2);
+				x+= w;
+
+				matrizText[i][j] = text;
+			}
+			p=x;
+			x = 0;
+			
+			y = y + h;
+		}
+		
+		
+		matrizText[0][0].setText("FCA");
+	}
+	
+	public void llenarMatriz(ArrayList<String> leng1,ArrayList<String> leng2 ){
+		for (int i = 1; i < leng1.size(); i++) {
+			matrizText[0][i].setText(leng1.get(i));
+			matrizText[i][0].setText(leng2.get(i));
+		}
+	}
+	/////////////////////////////////////////////////////////////////////////////////////
+	
 	public void crearMatrizZachman(int f, int c,int x,int y, int w, int h,Composite composite,Text[][] matrizText) {
 
 		int n = 0;
@@ -601,7 +723,7 @@ public class FCAViewPart extends ViewPart {
 		}
 
 	}
-	
+	/*
 	public void redimensionarScrolledComposite(){
 		scrolledCompositeMatriz = new ScrolledComposite(compositeMatriz, SWT.BORDER | SWT.H_SCROLL | SWT.V_SCROLL);
 		scrolledCompositeMatriz.setSize(600,600);
@@ -610,11 +732,12 @@ public class FCAViewPart extends ViewPart {
 		scrolledCompositeMatriz.setVisible(true);
 		System.out.println("scrolledCompositeMatriz:"+"x"+scrolledCompositeMatriz.getSize().x+"y"+scrolledCompositeMatriz.getSize().y);
 	}
-
+*/
 	public void negarComposites() {
 		compositeNuevaMatriz.setVisible(false);
 		compositeCrearMatriz.setVisible(false);
 		compositeMatriz.setVisible(false);
+//		scrolledCompositeMatriz.setVisible(false);
 
 		compositeComparar.setVisible(false);
 		compositeMatrizA.setVisible(false);
@@ -632,6 +755,14 @@ public class FCAViewPart extends ViewPart {
 			compositeMatriz = composite_aux;
 		}
 
+	}
+	
+	public void ubicarMatrizText(ScrolledComposite ubicacion, Text[][] matrizText){
+		for (int i = 0; i < matrizText.length; i++) {
+			for (int j = 0; j < matrizText[0].length; j++) {
+				matrizText[i][j].setParent(ubicacion);
+			}
+		}
 	}
 
 	public void crearMatriz(int f, int c) {
