@@ -3,9 +3,11 @@
 package fca.tests;
 
 import javax.xml.soap.SAAJResult;
+//si hay cambios
 
 import fca.Ajuste;
 import fca.FcaFactory;
+import fca.impl.AjusteImpl;
 import junit.framework.TestCase;
 import junit.textui.TestRunner;
 
@@ -36,6 +38,8 @@ public class AjusteTest extends TestCase {
 	 * @generated
 	 */
 	protected Ajuste fixture = null;
+	
+	ReglaUnoTest reglaUnoTest;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -143,24 +147,14 @@ public class AjusteTest extends TestCase {
 	public void testEliminarColumna() {
 		System.out.println("<testEliminarColumna>");
 
-		int columna = 4;
-		int columnaPrueba = 3;
-		String[][] matriz = new String[5][5];
-		String expected = "";
-		String actual = "";
-
-		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz[0].length; j++) {
-				matriz[i][j] = "x";
-				if (j == columna) {
-					matriz[i][columna] = "y";
-				}
-			}
-		}
-		expected = "x";
-		actual = fixture.eliminarColumna(matriz, columna)[0][columnaPrueba];
-		System.out.println("expected: " + expected + " actual: " + actual);
-
+		String[][] mp = fixture.obtenerMatrizPrueba(3);
+		System.out.println("inicio");
+		fixture.imprimirMatriz(mp);
+		System.out.println("resultado");
+		fixture.imprimirMatriz(fixture.eliminarColumna(mp, 1));
+		String expected ="" ;
+		String actual ="" ;
+		
 		assertEquals(expected, actual);
 
 		System.out.println("</testEliminarColumna>");
@@ -210,30 +204,59 @@ public class AjusteTest extends TestCase {
 	public void testContarObjetosColumna() {
 		System.out.println("<testContarObjetosColumna>");
 
-		int columna = 4;
-		String[][] matriz = new String[5][5];
+		String[][] mp = fixture.obtenerMatrizPrueba(3);
+		fixture.imprimirMatriz(mp);
+		String[] columna =fixture.obtenerColumna(mp, 1);
+		fixture.imprimirArreglo(columna, 'v');
+		
+		
 
-		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
-				matriz[i][j] = "x";
-			}
-		}
-		for (int i = 0; i < matriz.length; i++) {
-			matriz[i][columna] = "";
-			if (i == 1 || i == 4) {
-				matriz[i][columna] = "y";
-			}
-		}
-
-		int expected = 2;
-		int actual = fixture.contarObjetosColumna(fixture.obtenerColumna(
-				matriz, columna));
+		int expected = fixture.contarObjetosColumna(columna);
+		int actual = 1;
 		System.out.println(expected + "vs" + actual);
 		assertEquals(expected, actual);
 
 		System.out.println("</testContarObjetosColumna>");
 	}
 
+	/**
+	 * Tests the '{@link fca.Ajuste#combinarObjetoAtributo()
+	 * <em>Combinar Objeto Atributo</em>}' operation. <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * 
+	 * @see fca.Ajuste#combinarObjetoAtributo()
+	 * @generated
+	 */
+	public void testCombinarAtributoObjeto() {
+		System.out.println("<testCombinarAtributoObjeto>");
+
+		int fila = 3;
+		int columna = 2;
+		String[][] matriz = new String[5][5];
+		String expected = "";
+		String actual = "";
+
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz[0].length; j++) {
+				matriz[i][j] = "x";
+				if (i == fila && j == 0) {
+					matriz[fila][j] = "y";
+				}
+				if (i == 0 && j == columna) {
+
+					matriz[i][columna] = "z";
+				}
+			}
+		}
+
+		expected = "y/z";
+		actual = fixture.combinarAtributoObjeto(fila, columna, matriz);
+
+		assertEquals(expected, actual);
+		System.out.println("exp:" + expected + " vs " + "act:" + actual);
+		System.out.println("</testCombinarAtributoObjeto>");
+	}
+	
 	/**
 	 * Tests the '{@link fca.Ajuste#combinarObjetoAtributo()
 	 * <em>Combinar Objeto Atributo</em>}' operation. <!-- begin-user-doc -->
@@ -347,6 +370,33 @@ public class AjusteTest extends TestCase {
 
 		System.out.println("</testObtenerColumnasDeLaFila>");
 	}
+	
+	public void testObtenerFilasDeLaColumna() {
+		System.out.println("<testObtenerFilasDeLaColumna>");
+
+	
+
+		String[][] mp = fixture.obtenerMatrizPrueba(3);
+		fixture.imprimirMatriz(mp);
+		String[] columna =fixture.obtenerColumna(mp, 1);
+		fixture.imprimirArreglo(columna, 'v');
+		
+		int[] filasDeLaColumna = fixture.obtenerFilasDeLaColumna(columna);
+		String[] filas = new String[filasDeLaColumna.length];
+		for (int i = 0; i < filasDeLaColumna.length; i++) {
+			filas[i]=""+filasDeLaColumna[i];
+		}
+		fixture.imprimirArreglo(filas, 'h');
+		
+		int expected = 1;
+		int actual = 1;
+		System.out.println(expected + "vs" + actual);
+		assertEquals(expected, actual);
+
+	
+
+		System.out.println("</testObtenerFilasDeLaColumna>");
+	}
 
 	public void testAjustarFilas() {
 		System.out.println("<testAjustarFilas>");
@@ -401,24 +451,50 @@ public class AjusteTest extends TestCase {
 
 	public void testAjustarMatriz() {
 		System.out.println("<testAjustarMatriz>");
+		
+		String[][] mp = fixture.obtenerMatrizPrueba(2);
+		System.out.println(mp.length+"*"+mp[0].length);
+		
+		fixture.imprimirMatriz(mp);
 
-		String[][] matriz = new String[5][5];
-		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz[0].length; j++) {
-				matriz[i][j] = "x";
-				if (i == 2 || j == 2 || i == 3 || j == 3) {
-					matriz[i][j] = "";
-				}
-			}
-		}
 
-		String expected = "33";
-		String actual = "" + fixture.ajustarMatriz(matriz).length + ""
-				+ fixture.ajustarMatriz(matriz)[0].length;
-		System.out.println(expected + "vs" + actual);
+		String expected = "B"+"F"+"I"+"8"+"2"+"6"+"8";
+		
+		String[][] ma = fixture.ajustarMatriz(mp);
+		String actual = ma[1][0]+ma[4][0]+ma[7][0]+(ma.length)+ma[0][1]+ma[0][5]+(ma[0].length);
+		
+		fixture.imprimirMatriz(ma);
+		System.out.println(expected+"vs"+actual);
+			
 		assertEquals(expected, actual);
 
 		System.out.println("</testAjustarMatriz>");
 	}
+	
+	public void testAgregarColumnas() {
+		System.out.println("<testAgregarColumnas>");
+		
+		String[][] mp = fixture.obtenerMatrizPrueba(4);	
+		
+		fixture.imprimirMatriz(mp);
+		for (int i = 0; i < mp.length; i++) {
+			mp = fixture.agregarColumnas(mp, 1);
+		}
+		
+//		mp = fixture.agregarColumnas(mp, 3);
+		fixture.imprimirMatriz(mp);
+
+		String expected = "si";
+		
+		String actual = "si";
+		
+		System.out.println(expected+"vs"+actual);
+			
+		assertEquals(expected, actual);
+
+		System.out.println("</testAgregarColumnas>");
+	}
+	
+
 
 } // AjusteTest
