@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="grafo.Enlace"/>
-<fullyQualifiedTypeName name="javax.xml.soap.SAAJResult"/>
-<fullyQualifiedTypeName name="fca.Fca"/>
-<fullyQualifiedTypeName name="fca.impl.FcaImpl"/>
 <fullyQualifiedTypeName name="fca.impl.FcaFactoryImpl"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.eclipse.emf.common.util.EList"/>
 <fullyQualifiedTypeName name="javax.swing.JButton"/>
 <fullyQualifiedTypeName name="java.awt.Font"/>
@@ -14,7 +9,6 @@
 <fullyQualifiedTypeName name="ventanas.ventanaDos"/>
 <fullyQualifiedTypeName name="ventanas.VentanaDos"/>
 <fullyQualifiedTypeName name="javax.swing.JFrame"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="javax.swing.JTextField"/>
 <fullyQualifiedTypeName name="javax.swing.ViewportLayout"/>
 <fullyQualifiedTypeName name="org.eclipse.ui.IViewSite"/>
@@ -40,7 +34,6 @@
 <fullyQualifiedTypeName name="org.eclipse.swt.widgets.Text"/>
 <fullyQualifiedTypeName name="org.eclipse.ui.PlatformUI"/>
 <fullyQualifiedTypeName name="org.eclipse.ui.PartInitException"/>
-<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Composite"/>
 <fullyQualifiedTypeName name="javax.swing.JFileChooser"/>
 <fullyQualifiedTypeName name="logica.Logica"/>
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
@@ -56,8 +49,15 @@
 <fullyQualifiedTypeName name="javax.swing.text.View"/>
 <fullyQualifiedTypeName name="org.eclipse.gmf.runtime.notation.View"/>
 <fullyQualifiedTypeName name="interfaz.FCAViewPart"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="org.eclipse.ui.internal.PlatformUIPreferenceListener"/>
 <fullyQualifiedTypeName name="javax.swing.text.StyleConstants.ColorConstants"/>
 <fullyQualifiedTypeName name="org.eclipse.core.internal.registry.OffsetTable"/>
+<fullyQualifiedTypeName name="logica.Logicaf"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Composite"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.custom.ScrolledComposite"/>
+<fullyQualifiedTypeName name="fca.tests.ReglaUnoTest"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="fca.impl.AjusteImpl"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

@@ -13,6 +13,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="listaNodosAsociados" upperBound="-1"
         eType="#//Nodo"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="metaNodo" eType="#//MetaNodo"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" eType="#//Grafo" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Enlace" eSuperTypes="#//Carateristica">
     <eStructuralFeatures xsi:type="ecore:EReference" name="inicio" lowerBound="1"

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;columnasEncontradas&apos; in &apos;fca.impl.ReglaUnoImpl.analizarDosC(...)&apos; to &apos;atributosIguales&apos;&#x0A;- Original project: &apos;fca&apos;&#x0A;- Original element: &apos;fca.impl.ReglaUnoImpl.analizarDosC(String[][]).columnasEncontradas&apos;&#x0A;- Renamed element: &apos;columnasEncontradas&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;columnasEncontradas&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;fca.impl{ReglaUnoImpl.java[ReglaUnoImpl~analizarDosC~\[\[QString;@columnasEncontradas!6218!6287!6237!6255!QArrayList\&lt;QInteger;&gt;;!0!false" name="atributosIguales" references="true" stamp="1422748828609" version="1.0"/>
+</session>

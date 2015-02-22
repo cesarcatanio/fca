@@ -1,0 +1,322 @@
+/**
+ */
+package fca.tests;
+
+import java.util.ArrayList;
+
+import fca.Ajuste;
+import fca.FcaFactory;
+import fca.ReglaUno;
+import fca.impl.FcaFactoryImpl;
+import junit.framework.TestCase;
+import junit.textui.TestRunner;
+
+/**
+ * <!-- begin-user-doc --> A test case for the model object '
+ * <em><b>Regla Uno</b></em>'. <!-- end-user-doc -->
+ * <p>
+ * The following operations are tested:
+ * <ul>
+ * <li>{@link fca.ReglaUno#analizarUno() <em>Analizar Uno</em>}</li>
+ * <li>{@link fca.ReglaUno#analizarDos() <em>Analizar Dos</em>}</li>
+ * <li>{@link fca.ReglaUno#buscarSuperFila() <em>Buscar Super Fila</em>}</li>
+ * <li>{@link fca.ReglaUno#bucarNumeroEnArreglo() <em>Analizar Dos</em>}</li>
+ * </ul>
+ * </p>
+ * 
+ * @generated
+ */
+public class ReglaUnoTest extends TestCase {
+
+	/**
+	 * The fixture for this Regla Uno test case. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	protected ReglaUno fixture = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public static void main(String[] args) {
+		TestRunner.run(ReglaUnoTest.class);
+	}
+
+	/**
+	 * Constructs a new Regla Uno test case with the given name. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public ReglaUnoTest(String name) {
+		super(name);
+	}
+
+	/**
+	 * Sets the fixture for this Regla Uno test case. <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	protected void setFixture(ReglaUno fixture) {
+		this.fixture = fixture;
+	}
+
+	/**
+	 * Returns the fixture for this Regla Uno test case. <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	protected ReglaUno getFixture() {
+		return fixture;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see junit.framework.TestCase#setUp()
+	 * @generated
+	 */
+	@Override
+	protected void setUp() throws Exception {
+		setFixture(FcaFactory.eINSTANCE.createReglaUno());
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see junit.framework.TestCase#tearDown()
+	 * @generated
+	 */
+	@Override
+	protected void tearDown() throws Exception {
+		setFixture(null);
+	}
+	
+	
+	/**
+	 * Tests the '{@link fca.ReglaUno#analizarUno() <em>Analizar Uno</em>}'
+	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see fca.ReglaUno#analizarUno()
+	 * @generated
+	 */
+	public void testAnalizarUno() {
+//		System.out.println("<testAnalizarUno>");
+		Ajuste ajusteImpl = FcaFactoryImpl.eINSTANCE.createAjuste();
+		String[][] mp = ajusteImpl.obtenerMatrizPrueba(4);		
+//		ajusteImpl.imprimirMatriz(mp);
+//		System.out.println("\n");
+//		ajusteImpl.imprimirMatriz(fixture.analizarUno(mp));
+		String expected = "";
+		String actual = "";
+//		System.out.println(expected + " vs " + actual);
+		assertEquals(expected, actual);
+//		System.out.println("</testAnalizarUno>");
+	}
+	
+	/**
+	 * Tests the '{@link fca.ReglaUno#analizarUno() <em>Analizar Uno</em>}'
+	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see fca.ReglaUno#analizarUno()
+	 * @generated
+	 */
+	public void testAnalizarUnoB() {
+//		System.out.println("<testAnalizarUnoB>");
+		Ajuste ajusteImpl = FcaFactoryImpl.eINSTANCE.createAjuste();
+		String[][] mp = ajusteImpl.obtenerMatrizPrueba(4);		
+//		ajusteImpl.imprimirMatriz(mp);
+//		ajusteImpl.imprimirMatriz(fixture.analizarUnoB(mp));
+		String expected = "";
+		String actual = "";
+//		System.out.println(expected + " vs " + actual);
+		assertEquals(expected, actual);
+//		System.out.println("</testAnalizarUnoB>");
+	}
+
+	/**
+	 * Tests the '{@link fca.ReglaUno#analizarDos() <em>Analizar Dos</em>}'
+	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see fca.ReglaUno#analizarDos()
+	 * @generated
+	 */
+	public void testAnalizarDos() {
+//		System.out.println("<testAnalizarDos>");
+		Ajuste ajusteImpl = FcaFactoryImpl.eINSTANCE.createAjuste();
+		String[][] mp = ajusteImpl.obtenerMatrizPrueba(4);	
+//		System.out.println("inicio");
+//		ajusteImpl.imprimirMatriz(mp);
+		
+//		System.out.println("relación-superFilas");
+//		ajusteImpl.imprimirMatriz(fixture.analizarDos(mp));
+		
+//		System.out.println("resultado");
+		mp = ajusteImpl.obtenerMatrizPrueba(4);	
+		String[][] ma = fixture.analizarDosB(mp);
+//		ajusteImpl.imprimirMatriz(ma);
+
+//		System.out.println("\n");
+		
+		String expected = "true";
+		String actual = "true";
+		assertEquals(expected, actual);
+//		System.out.println("</testAnalizarDos>");
+	}
+	
+	/**
+	 * 
+	 */
+	public void testAnalizarDosB() {
+		System.out.println("<testAnalizarDosB>");
+		Ajuste ajusteImpl = FcaFactoryImpl.eINSTANCE.createAjuste();
+		String[][] mp = ajusteImpl.obtenerMatrizPrueba(6);	
+		System.out.println("inicio");
+		ajusteImpl.imprimirMatriz(mp);
+		System.out.println("respuesta");
+		ajusteImpl.imprimirMatriz(fixture.analizarDosB(mp));
+		String expected = "si";
+		String actual = "si";
+		System.out.println(expected + " vs " + actual);
+		assertEquals(expected, actual);
+		System.out.println("</testAnalizarDosB>");
+	}
+	
+//	public void testAnalizarDosC() {
+//		System.out.println("<testAnalizarDosC>");
+//		Ajuste ajusteImpl = FcaFactoryImpl.eINSTANCE.createAjuste();
+//		String[][] mp = ajusteImpl.obtenerMatrizPrueba(6);	
+//		System.out.println("inicio");
+//		ajusteImpl.imprimirMatriz(mp);
+//		System.out.println("respuesta");
+//		ajusteImpl.imprimirMatriz(fixture.analizarDosC(mp));
+//		String expected = "si";
+//		String actual = "si";
+//		System.out.println(expected + " vs " + actual);
+//		assertEquals(expected, actual);
+//		System.out.print("</testAnalizarDosC>");
+//	}
+
+	/**
+	 * Tests the '{@link fca.ReglaUno#buscarSuperFila()
+	 * <em>Buscar Super Fila</em>}' operation. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @see fca.ReglaUno#buscarSuperFila()
+	 * @generated
+	 */
+	public void testBuscarSuperFila() {
+//		System.out.println("<testBuscarSuperFila>");
+		Ajuste ajusteImpl = FcaFactoryImpl.eINSTANCE.createAjuste();
+		String[][] mp = ajusteImpl.obtenerMatrizPrueba(4);
+		mp = fixture.analizarDosB(mp);
+		int filaA = 2;
+		int filaB = 4;
+//		ajusteImpl.imprimirArreglo(mp[filaA], 'v');
+//		ajusteImpl.imprimirArreglo(mp[filaB], 'v');
+		ArrayList<Integer> atributosEncontrados = fixture.buscarSuperFila(ajusteImpl.obtenerFila(mp, filaA), ajusteImpl.obtenerFila(mp, filaB)); 
+//		ajusteImpl.imprimirArreglo(ajusteImpl.convertirArrayListIntergerAArregloString(atributosEncontrados), 'h');
+		boolean expected = true;;
+		boolean actual = true;
+//		System.out.println(expected+"vs"+actual);
+		assertEquals(expected, actual);
+//		System.out.println("</testBuscarSuperFila>");
+	}
+
+	/**
+	 * Tests the '{@link fca.ReglaUno#bucarNumeroEnArreglo()
+	 * <em>Bucar Numero En Arreglo</em>}' operation. <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * 
+	 * @see fca.ReglaUno#bucarNumeroEnArreglo()
+	 * @generated
+	 */
+	public void testBucarNumeroEnArreglo() {
+//		System.out.println("<testBucarNumeroEnArreglo>");
+		int numero = 3;
+		int[] arreglo = new int[5];
+		for (int i = 0; i < arreglo.length; i++) {
+			arreglo[i] = i;
+		}
+		int expected = numero;
+		int actual = fixture.bucarNumeroEnArreglo(numero, arreglo);
+//		System.out.println(expected + " vs " + actual);
+		assertEquals(expected, actual);
+//		System.out.println("</testBucarNumeroEnArreglo>");
+	}
+	
+	/**
+	 * 
+	 */
+	public void testObtenerFilasTocadas(){
+//		System.out.println("<testObtenerFilasTocadas>");
+		Ajuste ajusteImpl = FcaFactoryImpl.eINSTANCE.createAjuste();
+		String[][] mp = ajusteImpl.obtenerMatrizPrueba(4);		
+//		ajusteImpl.imprimirMatriz(mp);
+//		System.out.println("\n");
+//		ajusteImpl.imprimirArreglo(ajusteImpl.convertirArrayListIntergerAArregloString(fixture.obtenerFilasTocadas(mp)), 'h');
+		String expected = "";
+		String actual = "";
+//		System.out.println(expected + " vs " + actual);
+		assertEquals(expected, actual);
+//		System.out.println("</testObtenerFilasTocadas>");
+	}
+	
+	/**
+	 * 
+	 */
+	public void testAjustarFilas() {
+//		System.out.println("<testAjustarFilas>");
+		Ajuste ajusteImpl = FcaFactoryImpl.eINSTANCE.createAjuste();
+		String[][] mp = ajusteImpl.obtenerMatrizPrueba(4);	
+//		ajusteImpl.imprimirArreglo(ajusteImpl.convertirArrayListIntergerAArregloString(fixture.ajustarFilas(fixture.obtenerFilasTocadas(mp), 8)), 'h');
+		int expected = 1;
+		int actual = 1;
+//		System.out.println(expected + " vs " + actual);
+		assertEquals(expected, actual);
+//		System.out.println("</testAjustarFilas>");
+	}
+	
+	/**
+	 * 
+	 */
+	public void testObtenerCantidadObjeto() {
+//		System.out.println("<testObtenerCantidadObjeto>");
+		Ajuste ajusteImpl = FcaFactoryImpl.eINSTANCE.createAjuste();
+		String[][] mp = ajusteImpl.obtenerMatrizPrueba(4);
+		mp = fixture.analizarDosB(mp);
+		
+		int[][] ma = fixture.obtenerCantidadObjeto(mp);
+//		ajusteImpl.imprimirMatriz(ajusteImpl.convertirMatrizIntergerAString(ma));
+
+		int expected = 1;
+		int actual = 1;
+		assertEquals(expected, actual);
+//		System.out.println("</testObtenerCantidadObjeto>");
+	}
+	
+	/**
+	 * 
+	 */
+	public void testOrdenarPorIndice() {
+//		System.out.println("<testOrdenarPorIndice>");
+		Ajuste ajusteImpl = FcaFactoryImpl.eINSTANCE.createAjuste();
+		String[][] mp = ajusteImpl.obtenerMatrizPrueba(4);
+		mp = fixture.analizarDosB(mp);
+		int[][] ma = fixture.obtenerCantidadObjeto(mp);
+		int[][] mo = fixture.ordenarPorIndice(ma);
+//		ajusteImpl.imprimirMatriz(ajusteImpl.convertirMatrizIntergerAString(mo));
+	
+
+		int expected = 1;
+		int actual = 1;
+		assertEquals(expected, actual);
+//		System.out.println("</testOrdenarPorIndice>");
+	}
+
+} // ReglaUnoTest

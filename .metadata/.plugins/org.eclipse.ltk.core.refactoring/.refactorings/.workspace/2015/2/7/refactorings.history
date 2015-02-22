@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 10 resources" deleteContents="false" description="Delete 10 resources" element1="/com.eclipsesource.makeithappen.javafx.app" element10="/org.eclipse.emf.emfstore.example.helloworld" element2="/com.eclipsesource.makeithappen.javafx.app.product" element3="/com.eclipsesource.makeithappen.rap" element4="/com.eclipsesource.makeithappen.releng" element5="/com.eclipsesource.makeithappen.ui" element6="/com.eclipsesource.makeithappen.ui.emailControl" element7="/com.eclipsesource.makeithappen.view.group.swt.expand" element8="/com.eclipsesource.makeithappen.view.tabs.swt" element9="/com.eclipsesource.makeithappen.viewmodel" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="10" stamp="1423927705910"/>
+</session>

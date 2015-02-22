@@ -5,9 +5,11 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/u/Documentos/proyecto/proyecto/workspace/fca.tests"/>
+			<item value="/home/u/Documentos/proyecto/proyecto/workspace/fca"/>
+			<item value="/home/u/Documentos/proyecto/proyecto/workspace/vista.view"/>
+			<item value="/home/u/Documentos/proyecto/codigo/exampleContention"/>
 			<item value="/media/u/JUAN DAVID/Propuesta Proyecto/EcoreExample"/>
-			<item value="/home/u/Documentos/proyecto/proyecto/workspace"/>
-			<item value="/home/u/Documentos/proyecto/codigo"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>

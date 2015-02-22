@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="1196" class="grafo.view.Activator" localization="OSGI-INF/l10n/bundle" name="View" project="vista.view"/>
+	<bundle bundleID="1202" localization="plugin" name="%pluginName" project="fca" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1203" localization="plugin" name="%pluginName" project="fca.tests" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1197" class="grafo.presentation.GrafoEditorPlugin$Implementation" localization="plugin" name="%pluginName" project="grafo.editor" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1199" class="grafo.diagram.part.GrafoDiagramEditorPlugin" localization="plugin" name="%pluginName" project="grafo.diagram" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1198" localization="plugin" name="%pluginName" project="grafo.tests" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1207" class="com.eclipsesource.makeithappen.model.task.provider.TaskEditPlugin$Implementation" localization="plugin" name="%pluginName" project="com.eclipsesource.makeithappen.model.edit" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1206" localization="plugin" name="%pluginName" project="com.eclipsesource.makeithappen.model" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1200" class="grafo.provider.GrafoEditPlugin$Implementation" localization="plugin" name="%pluginName" project="grafo.edit" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1201" localization="plugin" name="%pluginName" project="grafo" provider="%providerName">
+		<library name="."/>
+	</bundle>
+</map>
