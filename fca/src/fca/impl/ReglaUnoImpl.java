@@ -36,6 +36,17 @@ public class ReglaUnoImpl extends MinimalEObjectImpl.Container implements
 	 * obtengo los atributos modificadas hasta el momento
 	 */
 	private ArrayList<Integer> atributosEditados = new ArrayList<Integer>();
+	
+	/**
+	 * obtengo los objetos modificadas hasta el momento
+	 */
+	private ArrayList<Integer> objetosEditados = new ArrayList<Integer>();
+	
+	/**
+	 * superFilas
+	 */
+	private ArrayList<Integer> superFilas = new ArrayList<Integer>();
+	
 
 	/**
 	 * Lista de las columnas editadas
@@ -117,29 +128,120 @@ public class ReglaUnoImpl extends MinimalEObjectImpl.Container implements
 	 */
 	public String[][] analizarUno(String[][] matriz) {
 		Ajuste ajusteImpl = FcaFactoryImpl.eINSTANCE.createAjuste();
-		
-		ajusteImpl.ajustarMatriz(matriz);
-		String[] fila;
+		ArrayList<Integer> atributosEditadosAux = new ArrayList<Integer>();
 		for (int i = 1; i < matriz.length; i++) {
-			fila = ajusteImpl.obtenerFila(matriz, i);
+			String[] fila = ajusteImpl.obtenerFila(matriz, i);
+			
 			if (ajusteImpl.contarAtributosFila(fila) == 1) {
 				int columna = ajusteImpl.obtenerColumnasDeLaFila(fila)[0];
-				matriz[0][columna] = ajusteImpl.combinarObjetoAtributo(i, columna, matriz);
-				matriz = ajusteImpl.eliminarFila(matriz, i);
-				i--;
+				if (buscarNumeroEnArrayList(columna, atributosEditadosAux) == -1 && buscarNumeroEnArrayList(i, objetosEditados) == -1) {
+					matriz[0][columna] = ajusteImpl.combinarObjetoAtributo(i, columna, matriz);
+					atributosEditadosAux.add(columna);	
+					matriz = ajusteImpl.eliminarFila(matriz, i);	
+					objetosEditados = ajustarFilas(objetosEditados, i);
+					i--;
+				}				
 			}
 		}
-		imprimirMatriz(matriz);
+		atributosEditados = atributosEditadosAux;
+	
 		return matriz;
 	}
-	public void imprimirMatriz(String[][] matriz){
-		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
-				System.out.println(matriz[i][j]);
+	
+	
+	@Override
+	public String[][] analizarUnoB(String[][] matriz) {
+		Ajuste ajusteImpl = FcaFactoryImpl.eINSTANCE.createAjuste();
+		ArrayList<Integer> objetosEditadosAux = new ArrayList<Integer>();
+		matriz = ajusteImpl.ajustarMatriz(matriz);
+		String[] columna;
+		
+		for (int i = 1; i < matriz[0].length; i++) {
+			columna = ajusteImpl.obtenerColumna(matriz, i);
+			if (ajusteImpl.contarObjetosColumna(columna) == 1) {
+				int fila = ajusteImpl.obtenerFilasDeLaColumna(columna)[0];
+				if (buscarNumeroEnArrayList(fila, objetosEditadosAux) == -1) {
+					
+					matriz[fila][0] = ajusteImpl.combinarAtributoObjeto(fila, i, matriz);
+					matriz = ajusteImpl.eliminarColumna(matriz, i);
+					objetosEditadosAux.add(fila);
+
+					i--;
+				}
 			}
-			System.out.println("\n");
 		}
+		
+		objetosEditados = objetosEditadosAux;
+		return matriz;
 	}
+
+	public ArrayList<Integer> obtenerFilasTocadas(String[][] matriz){
+		Ajuste ajusteImpl = FcaFactoryImpl.eINSTANCE.createAjuste();
+		matriz = ajusteImpl.ajustarMatriz(matriz);
+		ArrayList<Integer> filasTocadas = new ArrayList<>();
+		String[] columna;
+		for (int i = 1; i < matriz[0].length; i++) {
+			columna = ajusteImpl.obtenerColumna(matriz, i);
+			if (ajusteImpl.contarObjetosColumna(columna) == 1) {
+				int fila = ajusteImpl.obtenerFilasDeLaColumna(columna)[0];
+				if (buscarNumeroEnArrayList(fila, filasTocadas) == -1) {
+					matriz[fila][0] = ajusteImpl.combinarAtributoObjeto(fila, i, matriz);
+					matriz = ajusteImpl.eliminarColumna(matriz, i);
+					filasTocadas.add(fila);
+					i--;
+				}
+			}
+		}
+		return filasTocadas;
+	}
+
+	public String[][] analizarDosC(String[][] matriz){
+		Ajuste ajusteImpl = FcaFactoryImpl.eINSTANCE.createAjuste();
+		matriz = analizarDosB(matriz);		
+		
+		int[][] cantidadAtributosPorObjeto = ordenarPorIndice(obtenerCantidadObjeto(matriz));
+		String[][] matrizAux = matriz;
+		int k = matrizAux[0].length-1;
+		int c = 1;
+		
+		for (int i = 1; i < cantidadAtributosPorObjeto.length; i++) {
+			String[] filaA = ajusteImpl.obtenerFila(matriz, cantidadAtributosPorObjeto[i][1]);
+			
+				for (int j = i+1; j < cantidadAtributosPorObjeto.length; j++) {
+					String[] filaB = ajusteImpl.obtenerFila(matriz,cantidadAtributosPorObjeto[j][1]);
+
+					ArrayList<Integer> atributosIguales = buscarSuperFila(filaA,filaB);
+					
+					if (atributosIguales != null) {
+								
+								int a = cantidadAtributosPorObjeto[i][1];
+								
+								int b = cantidadAtributosPorObjeto[j][1];
+								
+								matrizAux = ajusteImpl.agregarColumnas(matrizAux, c);
+								k++;
+								c++;
+								System.out.println("Fila:["+b+"] Esta relacionada con la Fila:["+a+"]");
+								matrizAux[0][k] = matrizAux[a][0];
+								matrizAux[b][k] = "x";
+								
+								for (int l = 0; l < matrizAux[b].length; l++) {
+									for (int l2 = 0; l2 < atributosIguales.size(); l2++) {
+										if (atributosIguales.get(l2) == l) {
+											matrizAux[b][l] = "";
+										}
+									}									
+								}
+								
+								break;
+					}			
+				}			
+		}		
+		
+		return ajusteImpl.eliminarColumna(matrizAux,k+1);
+	}
+	
+
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -148,61 +250,100 @@ public class ReglaUnoImpl extends MinimalEObjectImpl.Container implements
 	 */
 	public String[][] analizarDos(String[][] matriz) {
 		Ajuste ajusteImpl = FcaFactoryImpl.eINSTANCE.createAjuste();
-		String[] fila;
-		int[] columnas;
-		int atributo = -1;
-		for (int i = 1; i < matriz.length; i++) {
-			for (int j = 1; j < matriz[0].length; j++) {
-				if (buscarSuperFila(matriz, i) != -1) {
-					fila = ajusteImpl.obtenerFila(matriz, i);
-					columnas = ajusteImpl.obtenerColumnasDeLaFila(fila);
-					atributo = compararArregloVsArrayList(columnas, atributosEditados);
-					
-					if (atributo != -1) {
-						matriz[0][atributo] = ajusteImpl.combinarObjetoAtributo(i, atributo, matriz);
-						matriz = ajusteImpl.eliminarFila(matriz, i);
-					}
 
-				}
-			}
-		}
+		matriz = analizarDosB(matriz);
+		
+	
+		
+		int[][] cantidadAtributosPorObjeto = ordenarPorIndice(obtenerCantidadObjeto(matriz));
+		String[][] superFilas = new String[matriz.length][4];
+		for (int i = 1; i < cantidadAtributosPorObjeto.length; i++) {
+			String[] filaA = ajusteImpl.obtenerFila(matriz, cantidadAtributosPorObjeto[i][1]);
+			
+				for (int j = i+1; j < cantidadAtributosPorObjeto.length; j++) {
+					String[] filaB = ajusteImpl.obtenerFila(matriz,cantidadAtributosPorObjeto[j][1]);
+				
+					
+					if (buscarSuperFila(filaA,filaB)!= null) {
+								
+								int a = cantidadAtributosPorObjeto[i][1];
+								int b = cantidadAtributosPorObjeto[j][1];
+								superFilas[i][0] = matriz[a][0];
+								
+								superFilas[i][1] = matriz[b][0];
+								superFilas[i][2] = ""+a;
+								superFilas[i][3] = ""+b;
+//								
+//								matriz = ajusteImpl.agregarColumnas(matriz, 1);
+//								matriz[0][matriz[0].length] = matriz[a][0];
+								break;
+						
+					}else {
+						int a = cantidadAtributosPorObjeto[i][1];
+						superFilas[i][0] = matriz[a][0];
+						superFilas[i][1] = "no";
+						superFilas[i][2] = ""+a;
+						superFilas[i][3] = ""+-1;
+						
+						
+					}
+					
+					 
+				}			
+		}		
+		superFilas[0][0] = "fila";
+		superFilas[0][1] = "superFila";
+		superFilas[0][2] = "fila#";
+		superFilas[0][3] = "superFila#";
+		int a = cantidadAtributosPorObjeto[cantidadAtributosPorObjeto.length-1][1];
+		superFilas[cantidadAtributosPorObjeto.length-1][0]=""+matriz[a][0];
+		superFilas[cantidadAtributosPorObjeto.length-1][1]="no";
+		superFilas[cantidadAtributosPorObjeto.length-1][2]=""+a;
+		superFilas[cantidadAtributosPorObjeto.length-1][3]=""+-1;
+		
+		return superFilas;
+	}
+
+	
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public String[][] analizarDosB(String[][] matriz) {
+
+		
+		matriz = analizarUno(analizarUnoB(matriz));
+
 		return matriz;
 	}
+	
+	
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated
 	 */
-	public int buscarSuperFila(String[][] matriz, int fila) {
+	public ArrayList<Integer> buscarSuperFila(String[] filaA, String[] filaB) {
 		Ajuste ajusteImpl = FcaFactoryImpl.eINSTANCE.createAjuste();
+		int contador = 0;
+		ArrayList<Integer> columnasIguales = new ArrayList<Integer>();
 		
-		String[] filaVector1 = ajusteImpl.obtenerFila(matriz, fila);
-		if (ajusteImpl.contarAtributosFila(filaVector1) < 2) {
-			return -1;
-		}
-		
-		String[] filaVector2;
-		int encontrados = 0;
-		for (int i = 1; i < matriz.length; i++) {
-			filaVector2 = ajusteImpl.obtenerFila(matriz, i);
-			if (i != fila) {
-				int[] fv1 = ajusteImpl.obtenerColumnasDeLaFila(filaVector1);
-				int[] fv2 = ajusteImpl.obtenerColumnasDeLaFila(filaVector2);
-				if (fv1.length <= fv2.length) {
-					for (int j = 0; j < fv1.length; j++) {
-						int numero = buscarNumeroEnArreglo(fv1[j], fv2);
-						if (numero != -1) {
-							encontrados++;
-						}
-					}
-				}	
-				if (encontrados == fv1.length) {
-					return i;
-				}
+		for (int i = 1; i < filaA.length; i++) {
+			if (filaA[i].equalsIgnoreCase(filaB[i]) && !(filaA[i].equals(""))) {
+				contador++;
+				columnasIguales.add(i);
 			}
 		}
-		return -1;
+	
+		
+		if (contador == ajusteImpl.contarAtributosFila(filaA) && contador != 0) {
+			
+			return columnasIguales;
+		}
+		return null;	
+		
 	}
 	
 	/**
@@ -295,7 +436,7 @@ public class ReglaUnoImpl extends MinimalEObjectImpl.Container implements
 			analizarDos(null);
 			return null;
 		case FcaPackage.REGLA_UNO___BUSCAR_SUPER_FILA:
-			buscarSuperFila(null, operationID);
+			buscarSuperFila(null, null);
 			return null;
 		}
 		return super.eInvoke(operationID, arguments);
@@ -311,20 +452,27 @@ public class ReglaUnoImpl extends MinimalEObjectImpl.Container implements
 	public int compararArregloVsArrayList(int[] columnas, ArrayList<Integer> a) {
 
 		for (int i = 0; i < columnas.length; i++) {
-			if (buscarNumeroEnArrayLis(columnas[i], a) == -1) {
+			if (buscarNumeroEnArrayList(columnas[i], a) == -1) {
 				return columnas[i];
 			}
 		}
 		return -1;
 	}
 
-	int buscarNumeroEnArrayLis(int n, ArrayList<Integer> a) {
+	int buscarNumeroEnArrayList(int n, ArrayList<Integer> a) {
+	
+
 		for (int i = 0; i < a.size(); i++) {
+			
 			if (n == a.get(i)) {
-				return i;
+
+				return a.get(i);
+				
 			}
 		}
+
 		return -1;
+		
 
 	}
 	int buscarNumeroEnArreglo(int n, int[] a) {
@@ -336,5 +484,58 @@ public class ReglaUnoImpl extends MinimalEObjectImpl.Container implements
 		return -1;
 
 	}
+
+	@Override
+	public ArrayList<Integer> ajustarFilas(ArrayList<Integer> arrayList,int fila) {
+		// TODO Auto-generated method stub
+		for (int i = 0; i < arrayList.size(); i++) {
+			if (fila < arrayList.get(i)) {
+				arrayList.set(i, arrayList.get(i)-1);
+			}
+		}
+		return arrayList;
+	}
+
+	@Override
+	public int[][] obtenerCantidadObjeto(String[][] matriz) {
+
+		Ajuste ajusteImpl = FcaFactoryImpl.eINSTANCE.createAjuste();
+		int[][] cantidadAtributosObjeto = new int[matriz.length][2];
+		int cantidad = 0;
+		for (int i = 1; i < matriz.length; i++) {
+			cantidad = ajusteImpl.contarAtributosFila(matriz[i]);
+			cantidadAtributosObjeto[i][0] = cantidad;
+			cantidadAtributosObjeto[i][1] = i;
+		}
+		return cantidadAtributosObjeto;		
+	}
+	
+	public int[][] ordenarPorIndice(int [][] matriz){
+        int i, j, aux,auxF;
+        for(i=1;i<=matriz.length-1;i++){
+             for(j=1;j<=matriz.length-i-1;j++){
+                  if(matriz[j+1][0]<matriz[j][0]){
+                     aux=matriz[j+1][0];
+                     
+                     auxF=matriz[j+1][1];
+                     
+                     matriz[j+1][0]=matriz[j][0];
+                     
+                     matriz[j+1][1]=matriz[j][1];
+                     
+                     matriz[j][0]=aux;
+                     
+                     matriz[j][1]=auxF;
+                  
+                  }
+             }
+        }
+		return matriz;
+	}
+
+
+
+	
+
 
 } // ReglaUnoImpl

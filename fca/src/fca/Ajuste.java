@@ -2,6 +2,8 @@
  */
 package fca;
 
+import java.util.ArrayList;
+
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -49,6 +51,14 @@ public interface Ajuste extends EObject {
 	String combinarObjetoAtributo(int fila, int columna, String[][] matriz);
 	
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	String combinarAtributoObjeto(int fila, int columna, String[][] matriz);
+	
+	/**
 	 * @param matriz
 	 * @param fila
 	 * @return
@@ -60,6 +70,12 @@ public interface Ajuste extends EObject {
 	 * @return
 	 */
 	int[] obtenerColumnasDeLaFila(String[] fila);
+	
+	/**
+	 * @param columna
+	 * @return
+	 */
+	int[] obtenerFilasDeLaColumna(String[] columna);
 	
 	/**
 	 * @param matriz
@@ -94,5 +110,43 @@ public interface Ajuste extends EObject {
 	 * @return
 	 */
 	String[][] ajustarMatriz(String[][] matriz);
+	
+	/**
+	 * Obtener Matriz Prueba
+	 * @return
+	 */
+	String[][] obtenerMatrizPrueba(int numero);
+	
+	/**
+	 * 
+	 */
+	String[] convertirArrayListIntergerAArregloString(ArrayList<Integer> arrayListInteger);
+	
+	/**
+	 * 
+	 */
+	String[][] convertirMatrizIntergerAString(int[][] matriz);
+	
+	/**
+	 * 
+	 */
+	String[][] agregarColumnas(String[][] matriz, int cantidad);
+	
+	/**
+	 * imprime la matriz
+	 * @return
+	 */
+	void imprimirMatriz(String[][] matriz);
+	
+	/**
+	 * imprimir arreglo
+	 */
+	void imprimirArreglo(String[] arreglo, char orientacion);
+
+	
+	
+	
+	
+	
 
 } // Ajuste

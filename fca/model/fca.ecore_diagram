@@ -32,7 +32,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_qXyuu1aEEeStmprtHEuMOg"/>
     </children>
     <element xmi:type="ecore:EClass" href="fca.ecore#//ReglaUno"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qXyusVaEEeStmprtHEuMOg" x="25" y="119"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qXyusVaEEeStmprtHEuMOg" x="5" y="115" width="176" height="97"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_qXyuvFaEEeStmprtHEuMOg" type="2001" fontName="Ubuntu">
     <children xmi:type="notation:DecorationNode" xmi:id="_qXzVwFaEEeStmprtHEuMOg" type="5001"/>

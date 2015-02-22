@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
+
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Regla Uno</b></em>'.
@@ -63,6 +65,14 @@ public interface ReglaUno extends EObject {
 	 * @generated
 	 */
 	String[][] analizarUno(String[][] matriz);
+	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	String[][] analizarUnoB(String[][] matriz);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -71,6 +81,21 @@ public interface ReglaUno extends EObject {
 	 * @generated
 	 */
 	String[][] analizarDos(String[][] matriz);
+	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	String[][] analizarDosB(String[][] matriz);
+	
+	/**
+	 * 
+	 * @param matriz
+	 * @return
+	 */
+	String[][] analizarDosC(String[][] matriz);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,7 +103,7 @@ public interface ReglaUno extends EObject {
 	 * @model
 	 * @generated
 	 */
-	int buscarSuperFila(String[][] matriz, int fila);
+	ArrayList<Integer> buscarSuperFila(String[] filaA,String[] filaB);
 	
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,5 +119,24 @@ public interface ReglaUno extends EObject {
 	 * @return
 	 */
 	int compararArregloVsArrayList(int[] columnas, ArrayList<Integer> atributosEditados);
-
+	
+	/**
+	 * 
+	 */
+	ArrayList<Integer> obtenerFilasTocadas(String[][] matriz);
+	
+	/**
+	 * 
+	 */
+	ArrayList<Integer> ajustarFilas(ArrayList<Integer> arrayList,int fila);
+	
+	/**
+	 * 
+	 */
+	int[][] obtenerCantidadObjeto(String[][] matriz);
+	
+	/**
+	 * 
+	 */
+	int[][] ordenarPorIndice(int [][] matriz);
 } // ReglaUno
